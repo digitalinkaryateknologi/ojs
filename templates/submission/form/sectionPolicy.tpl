@@ -6,8 +6,6 @@
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * Include section policy for submissions.
- *
- * @deprecated 3.4
  *}
 {assign var=class value="section-policy section-id-`$sectionId` `$class`"}
 

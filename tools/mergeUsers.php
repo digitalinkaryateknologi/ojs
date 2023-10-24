@@ -8,13 +8,15 @@
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @class mergeUsers
- *
  * @ingroup tools
  *
  * @brief CLI tool for merging two user accounts.
  */
 
-require(dirname(__FILE__) . '/bootstrap.php');
+require(dirname(__FILE__) . '/bootstrap.inc.php');
 
-$tool = new \PKP\cliTool\MergeUsersTool($argv ?? []);
+import('lib.pkp.classes.cliTool.MergeUsersTool');
+
+$tool = new MergeUsersTool(isset($argv) ? $argv : array());
 $tool->execute();
+

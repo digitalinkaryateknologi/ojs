@@ -5,7 +5,6 @@
  * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @hook Templates::Controllers::Tab::PubIds::Form::PublicIdentifiersForm []
  *}
 <script>
 	$(function() {ldelim}
@@ -19,21 +18,21 @@
 	{rdelim});
 </script>
 {if $pubObject instanceof Article}
-	<form class="pkp_form" id="publicIdentifiersForm" method="post" action="{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT op="updateIdentifiers"}">
+	<form class="pkp_form" id="publicIdentifiersForm" method="post" action="{url router=$smarty.const.ROUTE_COMPONENT op="updateIdentifiers"}">
 		{include file="controllers/notification/inPlaceNotification.tpl" notificationId="publicationIdentifiersFormFieldsNotification"}
 		<input type="hidden" name="submissionId" value="{$pubObject->getId()|escape}" />
 		<input type="hidden" name="stageId" value="{$stageId|escape}" />
 		<input type="hidden" name="tabPos" value="1" />
 		<input type="hidden" name="displayedInContainer" value="{$formParams.displayedInContainer|escape}" />
 		<input type="hidden" name="tab" value="identifiers" />
-{elseif $pubObject instanceof \PKP\galley\Galley}
+{elseif $pubObject instanceof ArticleGalley}
 	<form class="pkp_form" id="publicIdentifiersForm" method="post" action="{url component="grid.articleGalleys.ArticleGalleyGridHandler" op="updateIdentifiers" submissionId=$submissionId publicationId=$pubObject->getData('publicationId') representationId=$pubObject->getId() escape=false}">
 		{include file="controllers/notification/inPlaceNotification.tpl" notificationId="representationIdentifiersFormFieldsNotification"}
 {elseif $pubObject instanceof SubmissionFile}
 	<form class="pkp_form" id="publicIdentifiersForm" method="post" action="{url component="api.file.ManageFileApiHandler" op="updateIdentifiers" fileId=$pubObject->getId() submissionId=$pubObject->getData('submissionId') stageId=$stageId fileStageId=$pubObject->getFileStage() escape=false}">
 		{include file="controllers/notification/inPlaceNotification.tpl" notificationId="fileIdentifiersFormFieldsNotification"}
 {else} {* $pubObject instanceof Issue *}
-	<form class="pkp_form" id="publicIdentifiersForm" method="post" action="{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT op="updateIdentifiers" issueId=$pubObject->getId()}">
+	<form class="pkp_form" id="publicIdentifiersForm" method="post" action="{url router=$smarty.const.ROUTE_COMPONENT op="updateIdentifiers" issueId=$pubObject->getId()}">
 		{include file="controllers/notification/inPlaceNotification.tpl" notificationId="issueIdentifiersFormFieldsNotification"}
 {/if}
 {csrf}

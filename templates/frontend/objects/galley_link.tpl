@@ -32,23 +32,19 @@
 	{assign var="type" value="file"}
 {/if}
 
-{* Get path for URL *}
-{if $parent instanceOf \APP\issue\Issue}
+{* Get page and parentId for URL *}
+{if $parent instanceOf Issue}
 	{assign var="page" value="issue"}
 	{assign var="parentId" value=$parent->getBestIssueId()}
 	{assign var="path" value=$parentId|to_array:$galley->getBestGalleyId()}
-{else}{* \APP\submission\Submission *}
+{else}
 	{assign var="page" value="article"}
-	{if $publication}
-		{if $publication->getId() !== $parent->getData('currentPublicationId')}
-			{* Get a versioned link if we have an older publication *}
-			{assign var="path" value=$parent->getBestId()|to_array:"version":$publication->getId():$galley->getBestGalleyId()}
-		{else}
-			{assign var="parentId" value=$publication->getData('urlPath')|default:$article->getId()}
-			{assign var="path" value=$parentId|to_array:$galley->getBestGalleyId()}
-		{/if}
+	{assign var="parentId" value=$parent->getBestId()}
+	{* Get a versioned link if we have an older publication *}
+	{if $publication && $publication->getId() !== $parent->getData('currentPublicationId')}
+		{assign var="path" value=$parentId|to_array:"version":$publication->getId():$galley->getBestGalleyId()}
 	{else}
-		{assign var="path" value=$parent->getBestId()|to_array:$galley->getBestGalleyId()}
+		{assign var="path" value=$parentId|to_array:$galley->getBestGalleyId()}
 	{/if}
 {/if}
 
@@ -62,7 +58,8 @@
 {/if}
 
 {* Don't be frightened. This is just a link *}
-<a class="{if $isSupplementary}obj_galley_link_supplementary{else}obj_galley_link{/if} {$type|escape}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$path}"{if $id} id="{$id}"{/if}{if $labelledBy} aria-labelledby="{$labelledBy}"{/if}>
+<a class="{if $isSupplementary}obj_galley_link_supplementary{else}obj_galley_link{/if} {$type|escape}{if $restricted} restricted{/if}" href="{url page=$page op="view" path=$path}"{if $labelledBy} aria-labelledby={$labelledBy}{/if}>
+
 	{* Add some screen reader text to indicate if a galley is restricted *}
 	{if $restricted}
 		<span class="pkp_screen_reader">

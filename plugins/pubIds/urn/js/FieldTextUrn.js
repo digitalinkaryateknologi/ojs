@@ -8,7 +8,7 @@
  * Copyright (c) 2003-2021 John Willinsky
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
- * @brief A Vue.js component for URN text form field, that is used for custom suffixes, and that considers adding a check number.
+ * @brief A Vue.js component for a URN form field that adds a check number.
  */
 var template = pkp.Vue.compile('<div class="pkpFormField pkpFormField--text pkpFormField--urn" :class="classes">' +
 '			<form-field-label' +

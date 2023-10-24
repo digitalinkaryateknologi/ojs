@@ -67,10 +67,11 @@
 	};
 
 	// Apply the check number when the button is clicked
-	$('#checkNo').on('click', () => {
-			var urnPrefix = $('[id^="urnPrefix"]').val(), urnSuffix = $('[id^="urnSuffix"]').val();
-			urn = urnPrefix + urnSuffix;
-			$('[id^="urnSuffix"]').val(urnSuffix + $.pkp.plugins.generic.urn.getCheckNumber(urn, urnPrefix));
-		});
+	$('#checkNo').click(function() {
+		var urnPrefix = $('[id^="urnPrefix"]').val(),
+				urnSuffix = $('[id^="urnSuffix"]').val();
+		urn = urnPrefix + urnSuffix;
+		$('[id^="urnSuffix"]').val(urnSuffix + $.pkp.plugins.generic.urn.getCheckNumber(urn, urnPrefix));
+	});
 
 }(jQuery));

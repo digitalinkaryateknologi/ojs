@@ -1,13 +1,12 @@
-# Huang Feilong <hfl@nominsang.org>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-04T08:59:12-08:00\n"
-"PO-Revision-Date: 2021-11-10 12:33+0000\n"
-"Last-Translator: Huang Feilong <hfl@nominsang.org>\n"
+"PO-Revision-Date: 2020-06-16 22:10+0000\n"
+"Last-Translator: Huang Feilong <hfl@huangfeilong.com>\n"
 "Language-Team: Chinese (Simplified) <http://translate.pkp.sfu.ca/projects/"
-"ojs/manager/zh_CN/>\n"
+"ojs/manager/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,48 +19,41 @@ msgstr "存取"
 
 msgid "manager.distribution.copyrightYearBasis.description"
 msgstr ""
-"如何为文章选择默认版权日期。此默认值可覆盖。 如果您是“随时发布”，请不要使用此"
-"期次的发布日期。"
+"选择文章如何设置默认的版权日期。 可以逐个覆盖此默认值。 如果您“随时发布”，请"
+"不要使用此刊期的发布日期。"
 
 msgid "manager.distribution.copyrightYearBasis.issue"
-msgstr "使用期次的出版日期"
+msgstr "使用刊期的发布日期"
 
 msgid "manager.distribution.copyrightYearBasis.submission"
 msgstr "使用文章的发布日期"
 
 msgid "manager.distribution.publication"
-msgstr "出版"
+msgstr "发布"
 
 msgid "manager.distribution.publishingMode"
-msgstr "出版模式"
+msgstr "发布方式"
 
 msgid "manager.distribution.publishingMode.none"
-msgstr "OJS 将不会在线发布该期刊内容。"
+msgstr "OJS 将不会用于在线发布该期刊的内容。"
 
 msgid "manager.distribution.publishingMode.openAccess"
-msgstr "期刊内容将开放获取。"
+msgstr "期刊内容将开放阅读。"
 
 msgid "manager.distribution.publishingMode.subscription"
-msgstr "这份期刊需要订阅之后才能获取某些或所有的内容。"
-
-msgid "manager.setup.enableDois.description"
-msgstr ""
-
-msgid "doi.manager.settings.doiObjectsRequired"
-msgstr ""
-
-msgid "doi.manager.settings.doiSuffixLegacy"
-msgstr ""
-
-msgid "doi.manager.settings.doiCreationTime.copyedit"
-msgstr ""
+msgstr ">这份期刊需要订阅之后才能阅读某些或所有的内容。"
 
 msgid "manager.website.archiving"
-msgstr "存档中"
+msgstr "存档"
+
+msgid "manager.emails.confirmResetAll"
+msgstr ""
+"您确定您要重设这份期刊中所有的电子邮件模板为预设值？您将会失去您曾自订过的所"
+"有配置。"
 
 msgid "manager.files.note"
 msgstr ""
-"注意：文件浏览器是一项高级功能，它允许对一个期刊内的文件和目录直接浏览和操"
+"请注意：文件浏览器是一项高阶的功能，它允许一个期刊内的文件和目录直接被浏览和"
 "作。"
 
 msgid "manager.journalManagement"
@@ -71,57 +63,59 @@ msgid "manager.language.ui"
 msgstr "UI"
 
 msgid "manager.language.submissions"
-msgstr "稿件"
+msgstr "投稿"
 
 msgid "manager.language.forms"
 msgstr "表单"
 
 msgid "manager.language.confirmDefaultSettingsOverwrite"
-msgstr "这将替换期刊的本地化设置"
+msgstr "这将替换在此区域下您已经设定的任何指定区域的期刊设置"
 
 msgid "manager.languages.languageInstructions"
 msgstr ""
-"OJS 可以提供用户使用任何本系统支持的语言介面。同时，OJS 可以当做一个多语言的"
-"系统，使用户在每个页面都可以切换语言，并允许某些资料以附加的语言进行输入。"
-"<br /><br />如果一个 OJS 支持的语言没有列出，请联系您的网站管理员从网站管理介"
-"面安装该语系。新增系统支持语系的说明，参见 OJS 文档。"
+"OJS可以让用户使用几种受到支持的语言介面。同时，OJS可以当作一个部分多语化的系"
+"统，让用户在每个页面中可以切换语言，并允许某些资料以额外的两种语言进行输入。"
+"<br /><br />如果一个受到OJS支持的语言没有列在下表，请您的网站管理员从网站管理"
+"介面来安装该项语系。新增支持新语系的指引说明，请见OJS的文件。"
 
 msgid "manager.languages.noneAvailable"
 msgstr ""
-"抱歉，没有附加语言可供使用。如果您希望在这份期刊中使用附加语系，请联系您的网"
-"站管理员。"
+"抱歉，没有额外的语言可供使用。如果您希望在这份期刊中使用额外的语系，请联系您"
+"的网站管理者。"
 
 msgid "manager.languages.primaryLocaleInstructions"
-msgstr "这将会是本期刊网站的默认语言。"
+msgstr "这将会是期刊网站的预设语言。"
 
 msgid "manager.managementPages"
 msgstr "网页管理"
 
 msgid "manager.payment.action"
-msgstr "操作"
+msgstr "支付动作"
 
 msgid "manager.payment.addPayment"
-msgstr "新支付"
+msgstr "添加支付"
 
 msgid "manager.payment.amount"
 msgstr "数额"
 
 msgid "manager.payment.authorFees"
-msgstr "作者费"
+msgstr "作者费用管理"
 
 msgid "manager.payment.authorFeesDescription"
-msgstr "在下方输入金额以启用作者处理费用。"
+msgstr ""
+"选择的选项，连同它们的说明和费用(可以在下面进行编辑),将出现在投稿流程的第一步"
+"和投稿下面的关于期刊,以及在哪里需要支付点."
 
 msgid "manager.payment.currencymessage"
 msgstr ""
-"OJS 不执行任何货币转换。 如果接受付款订阅，您必须确定订阅货币与这里指定的相匹"
-"配。"
+"OJS不执行任何货币转换.  如果接受付款订阅, 你必须确定订阅货币与这里指定的一个"
+"匹配."
 
 msgid "manager.payment.description"
 msgstr "描述"
 
 msgid "manager.payment.details"
-msgstr "详细信息"
+msgstr "详细"
 
 msgid "manager.payment.editSubscription"
 msgstr "编辑订阅"
@@ -130,16 +124,19 @@ msgid "manager.payment.enable"
 msgstr "激活"
 
 msgid "manager.payment.feePaymentOptions"
-msgstr "支付选项"
+msgstr "费用支付选项管理"
 
 msgid "manager.payment.form.numeric"
-msgstr "所有费用必须是正的数字 (允许小数)"
+msgstr "所有费用必须是正的数字值 (允许小数点)"
 
 msgid "manager.payment.generalFees"
 msgstr "一般费用"
 
+#, fuzzy
 msgid "manager.payment.generalFeesDescription"
-msgstr "会员资格将出现在“政策”下的“关于期刊”中。"
+msgstr ""
+"该协会的成员，将出现在政策下面的关于期刊里, 捐赠链接就会出现右边框的搜索功能"
+"上面."
 
 msgid "manager.payment.generalOptions"
 msgstr "支付一般设置"
@@ -148,19 +145,21 @@ msgid "manager.payment.noPayments"
 msgstr "无支付记录"
 
 msgid "manager.payment.notFound"
-msgstr "未找到"
+msgstr "没有找到"
 
 msgid "manager.payment.options"
 msgstr "支付选项管理"
 
 msgid "manager.payment.options.acceptSubscriptionPayments"
-msgstr "这将激活订阅支付——期刊（订阅）管理员管理类型、成本、期限和订阅等。"
+msgstr ""
+"这将激活订阅的支付功能，其中类型，成本，期限和订阅由期刊（订阅）管理器管理。"
 
 msgid "subscriptionManager.subscription.confirmRemove"
 msgstr "您确定要删除此订阅吗？"
 
 msgid "manager.payment.options.enablePayments"
-msgstr "此期刊启用支付。注意：用户必须登录才能付款。"
+msgstr ""
+"点击这里启用支付模块.你必须填写下面的支付配置表单  注意：用户必须登录到付款."
 
 msgid "manager.payment.options.fee"
 msgstr "费用"
@@ -184,19 +183,19 @@ msgid "manager.payment.options.purchaseArticleFee"
 msgstr "购买文章费用"
 
 msgid "manager.payment.options.purchaseIssueFee"
-msgstr "购买期次费用"
+msgstr "购买事项"
 
 msgid "manager.payment.options.text"
-msgstr "支付方法简介"
+msgstr "支付方法描述"
 
 msgid "manager.payment.paymentId"
-msgstr "支付 ID"
+msgstr "支付ID"
 
 msgid "manager.payment.paymentMethod"
 msgstr "支付方法"
 
 msgid "manager.payment.paymentMethod.description"
-msgstr "您可以配置下面的任意支付插件用于支付。"
+msgstr "系统提供了如下支付方法插件供您选择。"
 
 msgid "manager.payment.paymentMethods"
 msgstr "支付方法管理"
@@ -209,7 +208,7 @@ msgstr "读者费用"
 
 msgid "manager.payment.readerFeesDescription"
 msgstr ""
-"选定的选项以及它们的简介和费用（可在下面进行编辑），将显示在“政策”下的“关于期"
+"选定的选项以及它们的描述和费用（可在下面进行编辑），将显示在“政策”下的“关于期"
 "刊”中以及需要付款的地方。"
 
 msgid "manager.payment.records"
@@ -219,7 +218,7 @@ msgid "manager.paymentTypes"
 msgstr "付款方式"
 
 msgid "manager.payment.userName"
-msgstr "支付 ID"
+msgstr "支付ID"
 
 msgid "manager.people.allEnrolledUsers"
 msgstr "全部注册用户"
@@ -238,71 +237,76 @@ msgstr "所有用户"
 
 msgid "manager.people.confirmRemove"
 msgstr ""
-"您要把这个用户移出这份期刊？这个操作将取消这个用户在这份期刊中所拥有的所有角"
-"色。"
+"您要把这个用户移出这份期刊中？这个动作将会取消这个用户在这份期刊中所拥有的所"
+"有角色。"
 
 msgid "manager.people.emailUsers.selectTemplate"
-msgstr "选择模板"
+msgstr "选择一个模板"
 
 msgid "manager.people.enrollExistingUser"
-msgstr "分配角色给用户"
+msgstr ">指派角色给已存在的用户"
 
 msgid "manager.people.enrollSyncJournal"
 msgstr "与期刊"
 
 msgid "manager.people.mergeUsers.from.description"
 msgstr ""
-"选择一个用户（或几个）并到其他的用户帐号（例如，当某个人有两个帐号时）。开始"
-"所选的帐号会被删除，而此帐号名下的的稿件、任务等会被并入第二个帐号。"
+"选择一个用户以合并到其他的用户帐号（例如，当某个人有两个用户帐号时）。一开始"
+"所选的帐号会被删除，而此帐号的投稿、指派工作...等等，会被归属给第二个帐号。"
 
 msgid "manager.people.mergeUsers.into.description"
-msgstr "选择一个用户将之前所选用户的权限、编辑任务等并入给他。"
+msgstr "选择一个用户，将之前所选之用户的权限、编辑指派工作等等重新归属给他。"
 
 msgid "manager.people.roleEnrollment"
 msgstr "{$role}注册"
 
 msgid "manager.people.syncUserDescription"
 msgstr ""
-"注册同步会将在某个期刊中已经有特定角色的用户在这个期刊中注册同样的角色。这个"
-"功能允许一组常见的用户（例如，审稿人）在期刊之间进行同步化。"
+"角色同步化会在这份期刊中指派「在特定期刊中已经有特定角色的用户」同样的角色。"
+"这个功能允许一组常见的用户（例如，审稿人）在期刊之间进行同步化。"
 
 msgid "manager.sections.abstractsNotRequired"
 msgstr "不要求文章摘要"
 
+msgid "manager.section.noSectionEditors"
+msgstr ""
+"还没有栏目编辑。 请通过 管理 > 设置 > 用户&amp;角色 将此角色添加到至少一个用"
+"户。"
+
 msgid "manager.sections.assigned"
-msgstr "此栏目编辑"
+msgstr "此栏目的编辑"
 
 msgid "manager.sections.confirmDelete"
 msgstr "您确定要永久删除该栏目吗？"
 
+#, fuzzy
 msgid "manager.sections.alertDelete"
-msgstr "在该栏目被删除之前，您必须将栏目中已经出版过的文章移动到另一个栏目中。"
+msgstr ""
+"在该栏目能够被删除之前，您必须将栏目中已经出版过的文章移动到另一个栏目中。"
 
 msgid "manager.sections.create"
 msgstr "新增栏目"
 
 msgid "manager.section.sectionEditorInstructions"
 msgstr ""
-"给栏目添加一个可以自动分配稿件的栏目编辑。（另外，栏目编辑也可以在有稿件后手"
-"动分配。）如果添加栏目编辑后，栏目编辑可以自动分配监督稿件的审稿和（或）其他"
-"编辑操作（文本编辑、排版和校对）。栏目编辑可以通过点击“期刊管理”的“角色”来创"
-"建。"
+"添加一个栏目编辑到这个栏目用于投稿自动指派. (另外，栏目编辑也可以在投稿到来后"
+"被手动指派.)当添加后，栏目编辑可以自动指派有监督审稿和（或）编辑该栏目内的投"
+"稿，栏目编辑可以通过点击期刊管理的角色来创建."
 
 msgid "manager.sections.editorRestriction"
-msgstr "只有编辑和栏目编辑可以提交项目。"
+msgstr "只有编辑和栏目编辑可以发送项目。"
 
 msgid "manager.sections.editors"
 msgstr "栏目编辑"
 
 msgid "manager.sections.confirmDeactivateSection.error"
 msgstr ""
-"至少有一个栏目必须处于活跃状态。访问工作流程设置以禁用向该期刊的所有稿件。"
 
 msgid "manager.sections.form.abbrevRequired"
 msgstr "此栏目需要一个缩写的标题"
 
 msgid "manager.sections.form.mustAllowPermission"
-msgstr "请确认至少有一个选项已经选取以便栏目编辑分配任务。"
+msgstr "请确认至少有一个选项已经选取以便于栏目编辑指派。"
 
 msgid "manager.sections.form.reviewFormId"
 msgstr "请确认您已经选择一个有效的审稿表单。"
@@ -462,7 +466,7 @@ msgstr "学科领域与次属领域"
 
 msgid "manager.setup.disciplineDescription"
 msgstr ""
-"当期刊包含跨领域学科而且/或者作者投稿多元学科领域的项目时，这会很有用。"
+".当期刊包含跨领域学科而且＼或者作者投稿多元学科领域的项目时，这会很有用。"
 
 msgid "manager.setup.disciplineExamples"
 msgstr "(例如，历史、教育、社会、心理学、文化研究、法律)"
@@ -494,7 +498,6 @@ msgstr "电子邮件认证"
 msgid "manager.setup.emailSignature"
 msgstr "签名"
 
-#, fuzzy
 msgid "manager.setup.emailSignature.description"
 msgstr ""
 "系统代表这份期刊所寄发的预备电子邮件会具有下面的签名列在信末。预备电子邮件的"
@@ -528,7 +531,7 @@ msgstr "为作者作品建立索引"
 
 msgid "manager.setup.forAuthorsToIndexTheirWorkDescription"
 msgstr ""
-"OJS 支持 <a href=\"http://www.openarchives.org/\" target=\"_blank\">Open "
+"OJS支持 <a href=\"http://www.openarchives.org/\" target=\"_blank\">Open "
 "Archives Initiative(OAI )开放存档计划</a> 协定来编写元数据，其显示标准提供了"
 "完善的索引，以存取全球规模的电子研究资源。作者会使用一个类似的模版来提供其投"
 "稿稿件的元数据。「期刊管理员」应该选择索引的领域，并请以相干的范例请作者索引"
@@ -536,7 +539,7 @@ msgstr ""
 "加上「例如，」或者「比方说：」来介绍。"
 
 msgid "manager.setup.form.issnInvalid"
-msgstr "指定的 ISSN 无效。"
+msgstr "指定的ISSN无效。"
 
 msgid "manager.setup.form.contactEmailRequired"
 msgstr "需要主要联系人的电子信箱。"
@@ -545,7 +548,7 @@ msgid "manager.setup.form.contactNameRequired"
 msgstr "需要主要联系人的姓名。"
 
 msgid "manager.setup.form.journalInitialsRequired"
-msgstr "需要期刊首字母名称。"
+msgstr "需要期刊起首字母名称。"
 
 msgid "manager.setup.form.journalTitleRequired"
 msgstr "期刊名称是必填项。"
@@ -607,7 +610,7 @@ msgstr "机构"
 msgid "manager.setup.itemsDescription"
 msgstr ""
 "可以新增「导航」列项目到当前显示自首页上方的项目中（如首页、期刊介绍、用户首"
-"页……等等）。"
+"页...等等）。"
 
 msgid "manager.setup.itemsPerPage"
 msgstr "每页几项"
@@ -633,7 +636,7 @@ msgid "manager.setup.contextAbout.description"
 msgstr ""
 "包括读者，作者或审阅者可能感兴趣的有关期刊的任何信息。 这可能包括您的开放访问"
 "政策，期刊的重点和范围，版权声明，赞助商披露，期刊的历史记录，隐私声明以及在"
-"任何 LOCKSS 或 CLOCKSS 档案系统中包括的内容。"
+"任何LOCKSS或CLOCKSS档案系统中包括的内容。"
 
 msgid "manager.setup.journalHomepageContent"
 msgstr "期刊首页内容"
@@ -652,17 +655,14 @@ msgstr "期刊首页头部"
 
 msgid "manager.setup.journalHomepageHeaderDescription"
 msgstr ""
-"可以上传一个图片版本的期刊标题和标志图形（logo）到首页上（以.gif、.jpg、.png"
-"的文件格式），以替换文字版本的显示方式。"
+"可以上传一个图片版本的期刊标题和标志图形(logo)到首页上（以.gif、.jpg、.png的"
+"文件格式），以替换文字版本的显示方式。"
 
 msgid "manager.setup.contextInitials"
-msgstr "期刊首字母"
-
-msgid "manager.setup.selectCountry"
-msgstr "选择该期刊所在的国家/地区，或该期刊或出版商的邮寄地址所在的国家/地区。"
+msgstr "期刊起首字母"
 
 msgid "manager.setup.journalLayout"
-msgstr "期刊排版"
+msgstr "期刊布局"
 
 msgid "manager.setup.journalLayoutDescription"
 msgstr ""
@@ -670,7 +670,7 @@ msgstr ""
 "替换系统默认的样式与主题样式（被选择的）。"
 
 msgid "manager.setup.journalLogo"
-msgstr "期刊标志"
+msgstr "期刊图标"
 
 msgid "manager.setup.journalLogo.altText"
 msgstr "期刊标志"
@@ -680,11 +680,11 @@ msgstr "期刊网页页尾"
 
 msgid "manager.setup.journalPageFooterDescription"
 msgstr ""
-"这是您的期刊的页尾。要变更或更新页尾，在下面的文字框中贴上 HTML 代码。比方"
-"说，可以是另一个导航栏、一个计数器等等。这个页尾会显示在所有的页面中。"
+"这是您的期刊的页尾。要变更或更新页尾，在下面的文字框中贴上HTML代码。比方说，"
+"可以是另一个导航栏、一个计数器等等。这个页尾会显示在所有的页面中。"
 
 msgid "manager.setup.journalPolicies"
-msgstr "步骤 2：期刊政策"
+msgstr "步骤 2：期刊方针"
 
 msgid "manager.setup.journalSetup"
 msgstr "期刊配置"
@@ -693,7 +693,7 @@ msgid "manager.setup.journalSetupUpdated"
 msgstr "您的期刊配置已经更新。"
 
 msgid "manager.setup.journalStyleSheetInvalid"
-msgstr "无效的期刊样式表格式。可接受的格式为 .css 的文件格式。"
+msgstr "无效的期刊样式表格式。可接受的格式为.css的文件格式。"
 
 msgid "manager.setup.journalTheme"
 msgstr "期刊主题"
@@ -720,44 +720,43 @@ msgid "manager.setup.lists"
 msgstr "列表"
 
 msgid "manager.setup.plnPluginEnable"
-msgstr "启用 PKP PN 插件"
+msgstr "启用PKP PN插件"
 
 msgid "manager.setup.plnDescription"
-msgstr ""
-"PKP 存储网络（PN）为满足一些基本条件的任何 OJS 期刊提供免费的存储服务。"
+msgstr "PKP存储网络（PN）为满足一些基本条件的任何OJS期刊提供免费的存储服务。"
 
 msgid "manager.setup.plnSettingsDescription"
-msgstr "查看<button>插件设置</button>以接受 PKP PN 的使用条款。"
+msgstr "查看<button>插件设置</button>以接受PKP PN的使用条款。"
 
 msgid "manager.setup.plnPluginArchiving"
-msgstr "PKP 存储网络（PN）"
+msgstr "PKP存储网络（PN）"
 
 msgid "manager.setup.plnPluginNotInstalled"
 msgstr ""
-"PKP 存储网络（PN）为符合一些基本标准的任何OJS期刊提供免费的存储服务。 OJS 3 "
-"的 PKP PN 插件目前正在开发中，即将在插件库中可用。"
+"PKP存储网络（PN）为符合一些基本标准的任何OJS期刊提供免费的存储服务。 OJS 3的"
+"PKP PN插件目前正在开发中，即将在插件库中可用。"
 
 msgid "manager.setup.otherLockss"
 msgstr "LOCKSS 和 CLOCKSS"
 
 msgid "manager.setup.lockssEnable"
 msgstr ""
-"启用 LOCKSS，在加入 LOCKSS 的图书馆通过<a href=\"{$lockssUrl}\" target="
-"\"_blank\">发布者清单</a>页面保存与传播期刊的内容。"
+"启用LOCKSS，在加入LOCKSS的图书馆通过<a href=\"{$lockssUrl}\" target=\"_blank"
+"\">发布者清单</a>页面保存与传播期刊的内容。"
 
 msgid "manager.setup.lockssLicenseDescription"
 msgstr ""
-"LOCKSS 许可证将显示在“关于期刊”的“归档”下：<a href=\"http://www.lockss.org/"
-"community/publishers-titles-gln/\" target=\"_blank\"> LOCKSS 许可证</a>"
+"LOCKSS许可证将显示在“关于期刊”的“归档”下：<a href=\"http://www.lockss.org/"
+"community/publishers-titles-gln/\" target=\"_blank\">LOCKSS许可证</a>"
 
 msgid "manager.setup.lockssLicenseLabel"
-msgstr "LOCKSS 许可证说明"
+msgstr "LOCKSS许可证说明"
 
 msgid "manager.setup.lockssRegister"
 msgstr ""
-"列出 6-10 个会注册并且快取这份期刊的图书馆。例如，指派编辑或者编委成员工作的"
-"机构，以及或者已经加入 LOCKSS 的机构。见<a href=\"http://www.lockss.org/"
-"community/\" target=\"_blank\"> LOCKSS 社区</a>。"
+"列出6-10个会注册并且快取这份期刊的图书馆。例如，指派编辑或者编委成员工作的机"
+"构，以及或者已经加入LOCKSS的机构。见<a href=\"http://www.lockss.org/"
+"community/\" target=\"_blank\">LOCKSS 社区</a>。"
 
 msgid "manager.setup.lockssTitle"
 msgstr "LOCKSS"
@@ -770,7 +769,7 @@ msgstr ""
 msgid "manager.setup.clockssLicenseDescription"
 msgstr ""
 "CLOCKSS 协议将出现在归档： <a href=\"http://clockss.org/\" target=\"_blank"
-"\"> CLOCKSS 协议</a> 下的『关于期刊』中"
+"\">CLOCKSS 协议</a> 下的『关于期刊』中"
 
 msgid "manager.setup.clockssLicenseLabel"
 msgstr "CLOCKSS 协议描述"
@@ -787,7 +786,7 @@ msgid "manager.setup.look"
 msgstr "外观"
 
 msgid "manager.setup.look.description"
-msgstr "首页标题、内容、期刊标题、页尾、导航条和样式。"
+msgstr "首页标题、内容、期刊标题、尾标、浏览列、和样式。"
 
 msgid "manager.setup.management"
 msgstr "管理"
@@ -824,7 +823,7 @@ msgid "manager.setup.noImageFileUploaded"
 msgstr "没有上传的图片文件。"
 
 msgid "manager.setup.noStyleSheetUploaded"
-msgstr "没有上传 CSS 样式表。"
+msgstr "没有上传CSS样式表。"
 
 msgid "manager.setup.note"
 msgstr "备注"
@@ -861,8 +860,8 @@ msgstr "校对说明"
 msgid "manager.setup.proofingInstructionsDescription"
 msgstr ""
 "「校对说明」会在「投稿编辑」页面显示给校对者、作者、版面编辑与栏目编辑看。下"
-"面是一组预设的 HTML 格式说明，期刊管理员可以随时编辑或替换（以纯文字或 HTML "
-"形式皆可）。"
+"面是一组预设的HTML格式说明，期刊管理员可以随时编辑或替换（以纯文字或HTML形式"
+"皆可）。"
 
 msgid "manager.setup.publicationSchedule"
 msgstr "出版流程"
@@ -879,8 +878,14 @@ msgstr "出版时程配置"
 msgid "manager.setup.publicIdentifier"
 msgstr "期刊内容识别码"
 
+msgid "manager.setup.publishing"
+msgstr "出版细节"
+
 msgid "manager.setup.publisher"
 msgstr "出版者"
+
+msgid "manager.setup.publishingDescription"
+msgstr "出版这份期刊的组织单位名称会出现在这份期刊的「期刊介绍」中。"
 
 msgid "manager.setup.referenceLinking"
 msgstr "参考文献链接"
@@ -904,14 +909,14 @@ msgstr ""
 
 msgid "manager.setup.reviewOptions.automatedRemindersDisabled"
 msgstr ""
-"要使用邮件自动提醒功能，管理员必须启用 OJS 配置文件中的<tt>scheduled_tasks</"
+"要使用邮件自动提醒功能，管理员必须启用OJS配置文件中的<tt>scheduled_tasks</"
 "tt> 选项。另外，OJS 文档中对于服务器的配置会对此选项有所关联。"
 
 msgid "manager.setup.reviewOptions.numWeeksPerReview"
 msgstr "一般审稿时间"
 
 msgid "manager.setup.reviewOptions.onQuality"
-msgstr "对每一篇审稿结果，编辑将会由 1 到 5 评比审稿人。"
+msgstr "对每一篇审稿结果，编辑将会由1到5评比审稿人。"
 
 msgid "manager.setup.reviewOptions.restrictReviewerFileAccess"
 msgstr "限定文件存取"
@@ -984,7 +989,7 @@ msgid "manager.setup.siteAccess.viewContent"
 msgstr "查看文章内容"
 
 msgid "manager.setup.stepsToJournalSite"
-msgstr "创建一个期刊网站的 5 个步骤"
+msgstr "创建一个期刊网站的5个步骤"
 
 msgid "manager.setup.subjectExamples"
 msgstr "(例如，光和作用、黑洞、四色地图问题、贝斯定理)"
@@ -998,6 +1003,16 @@ msgstr "提供用来指导作者提取关键字或主题的示例"
 msgid "manager.setup.submissionGuidelines"
 msgstr "投稿须知"
 
+msgid "manager.setup.submissionPreparationChecklist"
+msgstr "投稿准备清单"
+
+msgid "manager.setup.submissionPreparationChecklistDescription"
+msgstr ""
+"在提交一份投稿文章给这个期刊时，作者首先会被要求检查是否完成「投稿准备清单」"
+"中的每个项目，才能继续下一步。这份清单也会出现在「期刊介绍」内的「作者须知」"
+"栏位中。这份清单能够在下面进行编辑，而所有的项目将会需要作者进行检查后，才能"
+"继续他们的投稿流程。"
+
 msgid "manager.setup.submissions"
 msgstr "投稿"
 
@@ -1006,11 +1021,9 @@ msgstr "作者指引、版权和索引(包括注册)。"
 
 msgid "manager.setup.disableSubmissions.description"
 msgstr ""
-"防止用户向期刊提交新文章。  可以在<a href=\"{$url}\">期刊栏目</a>设置页面上为"
-"个别期刊栏目禁用提交。"
 
 msgid "manager.setup.disableSubmissions.notAccepting"
-msgstr "本刊目前不接受投稿。访问工作流程设置以允许提交。"
+msgstr ""
 
 msgid "manager.setup.enableOai"
 msgstr "启用 OAI"
@@ -1035,7 +1048,7 @@ msgstr "独一的识别码"
 msgid "manager.setup.uniqueIdentifierDescription"
 msgstr ""
 "文章和期数可以被附加上一个识别数字或字串，使用一个像是数位物件识别系统"
-"（Digital Object Identifier System; DOI）的注册系统。"
+"(Digital Object Identifier System; DOI)的注册系统。"
 
 msgid "manager.setup.useEditorialReviewBoard"
 msgstr "本期刊设有一个编辑/审稿委员会。"
@@ -1052,11 +1065,19 @@ msgstr "用户注册"
 msgid "manager.setup.useTextTitle"
 msgstr "标题文字"
 
+msgid "manager.statistics.defaultMetricDescription"
+msgstr ""
+"\n"
+"\t\t您的期刊目前有多种统计衡量标准。使用情况统计会在多处显示相关情况。\n"
+"\t\t很多情况更适合使用单一标准。例如显示期刊文章的利用率或者检索情况\n"
+"\t\t排名。请选择一种衡量标准作为默认标准。\n"
+"\t"
+
 msgid "manager.statistics.statistics"
 msgstr "期刊统计"
 
 msgid "manager.statistics.statistics.articleViews"
-msgstr "文章阅读统计（for Authors only）"
+msgstr "文章阅读统计(for Authors only)"
 
 msgid "manager.statistics.statistics.count.accept"
 msgstr "同意发表"
@@ -1075,9 +1096,9 @@ msgstr "出版天数"
 
 msgid "manager.statistics.statistics.description"
 msgstr ""
-"OJS 为每一份期刊计算下列的统计数据。「审稿天数」计算从投稿日（或指派审稿版本"
-"的日期）开始，到做出最初的编辑决策之间的天数；而「出版日数」则计算从收到上传"
-"初稿到出版之间的天数。"
+"OJS为每一份期刊计算下列的统计数据。「审稿天数」计算从投稿日（或指派审稿版本的"
+"日期）开始，到做出最初的编辑决策之间的天数；而「出版日数」则计算从收到上传初"
+"稿到出版之间的天数。"
 
 msgid "manager.statistics.statistics.itemsPublished"
 msgstr "已出版项目"
@@ -1135,6 +1156,14 @@ msgstr "期刊主要页面访问量"
 msgid "manager.statistics.reports.defaultReport.issuePageViews"
 msgstr "期刊目录页访问量"
 
+msgid "manager.statistics.reports.filters.byContext.description"
+msgstr "通过上下文（期次 和/或 文章）缩小结果范围。"
+
+msgid "manager.statistics.reports.filters.byObject.description"
+msgstr ""
+"通过目标类型（期刊，期次，样稿，样稿格式）和/或 一个或多个目标id缩小结果范"
+"围。"
+
 msgid "manager.subscriptionPolicies"
 msgstr "订阅规定"
 
@@ -1191,22 +1220,22 @@ msgstr "订阅期满提醒函"
 
 msgid "manager.subscriptionPolicies.expiryRemindersDescription"
 msgstr ""
-"可以在订阅期满之前和之后自动发送电子邮件提醒函（期刊管理员可在 OJS 的预备电子"
-"邮件中编辑）。"
+"可以在订阅期满之前和之后自动发送电子邮件提醒函（期刊管理员可在OJS的预备电子邮"
+"件中编辑）。"
 
 msgid "manager.subscriptionPolicies.expiryRemindersDisabled"
 msgstr ""
-"<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用 OJS 配置文件"
-"中的<tt>scheduled_tasks</tt> 选项。有些服务器会要求使用此项功能（可能无法在所"
-"有的服务器上面执行）配合上面提到的 OJS 文档。"
+"<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用OJS配置文件中"
+"的<tt>scheduled_tasks</tt> 选项。有些服务器会要求使用此项功能（可能无法在所有"
+"的服务器上面执行）配合上面提到的 OJS 文档。"
 
 msgid "manager.subscriptionPolicies.expirySelectOne"
 msgstr "选择下列之一："
 
 msgid "manager.subscriptionPolicies.htmlInstructions"
 msgstr ""
-"HTML 能够被使用在文字区域中（配置字形大小和字体色彩等等）， 按下\"Enter\"会被"
-"视为插入<tt>&lt;br&gt;</tt>标签；HTML 编辑器能在 Firefox 浏览器中执行。"
+"HTML能够被使用在文字区域中（配置字形大小和字体色彩等等）， 按下\"Enter\"会被"
+"视为插入<tt>&lt;br&gt;</tt>标签；HTML编辑器能在Firefox浏览器中执行。"
 
 msgid ""
 "manager.subscriptionPolicies.numMonthsAfterSubscriptionExpiryReminderValid"
@@ -1218,7 +1247,7 @@ msgstr "请选择一个订阅期满之前有多少月数的有效值。"
 
 msgid ""
 "manager.subscriptionPolicies.numWeeksAfterSubscriptionExpiryReminderValid"
-msgstr "请选择一个订阅期满之后有多少周数的有效值。"
+msgstr ".请选择一个订阅期满之后有多少周数的有效值。"
 
 msgid ""
 "manager.subscriptionPolicies.numWeeksBeforeSubscriptionExpiryReminderValid"
@@ -1230,17 +1259,17 @@ msgstr ""
 
 msgid "manager.subscriptionPolicies.openAccessNotificationDisabled"
 msgstr ""
-"<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用 OJS 配置文件"
-"中的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上"
-"面指出的 OJS 文件当中。"
+"<strong>注意：</strong>要启用这些选项，这个网站的管理员必须启用OJS配置文件中"
+"的<tt>scheduled_tasks</tt> 选项。（可能无法在所有的服务器上面执行），就在上面"
+"指出的OJS文件当中。"
 
 msgid "manager.subscriptionPolicies.onlinePaymentNotifications"
 msgstr "在线支付通知"
 
 msgid "manager.subscriptionPolicies.onlinePaymentNotificationsDescription"
 msgstr ""
-"订阅在线支付完成后，可以将自动电子邮件通知（由 OJS 的电子邮件中的日记管理器进"
-"行编辑）发送给订阅管理器。"
+"订阅在线支付完成后，可以将自动电子邮件通知（由OJS的电子邮件中的日记管理器进行"
+"编辑）发送给订阅管理器。"
 
 msgid ""
 "manager.subscriptionPolicies."
@@ -1372,12 +1401,6 @@ msgstr "一个订阅类别是必须的。"
 msgid "manager.subscriptions.form.typeIdValid"
 msgstr "请选择一个有效的订阅类型。"
 
-msgid "manager.subscriptions.form.institution"
-msgstr ""
-
-msgid "manager.subscriptions.form.institutionIdValid"
-msgstr ""
-
 msgid "manager.subscriptions.form.dateStart"
 msgstr "开始日期"
 
@@ -1455,30 +1478,28 @@ msgstr "邮寄地址"
 
 msgid "manager.subscriptions.form.domainInstructions"
 msgstr ""
-"如果一个域名在这里输入，IP范围是可选的。<br />有效值为域名 (例如 lib.sfu."
-"ca)。"
+"如果一个域名在这里输入, IP范围是可选的.<br />有效值为域名 (例如 lib.sfu.ca)."
 
 msgid "manager.subscriptions.form.domainIPRangeRequired"
-msgstr "选定的订阅类型要求一个域名和（或）IP范围，用于订阅验证。"
+msgstr "选定的订阅类型要求一个域名和（或）IP范围，用于订阅验证."
 
 msgid "manager.subscriptions.form.domainValid"
-msgstr "请出入一个有效的域名。"
+msgstr "请出入一个有效的域名."
 
 msgid "manager.subscriptions.form.ipRange"
-msgstr "IP 范围"
+msgstr "IP范围"
 
 msgid "manager.subscriptions.form.ipRangeItem"
 msgstr "&#8226;"
 
 msgid "manager.subscriptions.form.ipRangeInstructions"
 msgstr ""
-"如果在这里输入了 IP 范围, 域名是可选的。<br />有效值包含一个 IP 地址（例如 "
-"142.58.103.1）， IP 范围（例如 142.58.103.1 - 142.58.103.4），带有通配符 '*' "
-"的 IP 范围（例如 142.58.*.*），和带有 CIDR 的 IP 范围（例如"
-"142.58.100.0/24）。"
+"如果在这里输入了IP范围, 域名是可选的.<br />有效值包含一个IP地址(例如"
+"142.58.103.1), IP范围 (例如142.58.103.1 - 142.58.103.4), 带有通配符 '*'的IP范"
+"围 (例如. 142.58.*.*), 和带有CIDR的IP范围 (例如142.58.100.0/24)."
 
 msgid "manager.subscriptions.form.ipRangeValid"
-msgstr "请输入一个有效的 IP 范围。"
+msgstr "请输入一个有效的IP范围."
 
 msgid "manager.subscriptions.form.deleteIpRange"
 msgstr "删除"
@@ -1491,20 +1512,17 @@ msgstr "保存并创建另一个"
 
 msgid "manager.subscriptions.form.subscriptionContactRequired"
 msgstr ""
-"为了发送给用户一个通知电子邮件，订阅联系人的姓名和电子邮箱地址必须在期刊设置"
-"过程中被指定。"
+"为了发送给用户一个通知电子邮件,订阅联系人的姓名和电子邮箱地址必须在期刊设置过"
+"程中被指定."
 
 msgid "manager.subscriptions.form.subscriptionExists"
-msgstr "这个用户在这本期刊里已经有一个订阅。"
+msgstr "这个用户在这本期刊里已经有一个订阅."
 
 msgid "manager.subscriptions.form.typeRequired"
-msgstr "订阅类型必须在新订阅之前被创建。"
-
-msgid "manager.subscriptions.form.institutionRequired"
-msgstr ""
+msgstr "订阅类型必须在新订阅之前被创建."
 
 msgid "manager.subscriptions.ipRange"
-msgstr "IP 范围"
+msgstr "IP范围"
 
 msgid "manager.subscriptions.membership"
 msgstr "会员"
@@ -1586,7 +1604,7 @@ msgid "manager.subscriptionTypes.form.cost"
 msgstr "价格"
 
 msgid "manager.subscriptionTypes.form.costInstructions"
-msgstr "输入一个数值（例如，40 或 40.00）不要含有任何像“$”的其他文字。"
+msgstr "输入一个数值(例如，40或40.00)不要含有任何像\"$\"的其他文字。"
 
 msgid "manager.subscriptionTypes.form.costNumeric"
 msgstr "价格必须是一个正整数。"
@@ -1616,7 +1634,7 @@ msgid "manager.subscriptionTypes.form.nonExpiring.neverExpires"
 msgstr "永不过期"
 
 msgid "manager.subscriptionTypes.form.nonExpiringValid"
-msgstr "请使用提供的选项。"
+msgstr "请使用提供的选项."
 
 msgid "manager.subscriptionTypes.form.duration"
 msgstr "期限"
@@ -1781,7 +1799,7 @@ msgstr "不符合插件要求"
 
 msgid "plugins.importexport.common.error.DOIsNotAvailable"
 msgstr ""
-"为使用该款插件，请在“公共标识符”插件分类中，启用和配置 DOI 插件并且指定一个有"
+"为使用该款插件，请在\"公共标识符\"插件分类中，启用和配置DOI插件并且指定一个有"
 "效的DOI前置。"
 
 msgid "plugins.importexport.common.error.pluginNotConfigured"
@@ -1826,7 +1844,7 @@ msgid "plugins.importexport.common.action.register"
 msgstr "注册"
 
 msgid "plugins.importexport.common.validation"
-msgstr "在导出和注册之前验证 XML。"
+msgstr "在导出和注册之前验证XML。"
 
 msgid "plugins.importexport.common.error.noObjectsSelected"
 msgstr "未选择。"
@@ -1835,13 +1853,13 @@ msgid "plugins.importexport.common.error.validation"
 msgstr "不能转化选择的对象。"
 
 msgid "plugins.importexport.common.invalidXML"
-msgstr "无效的 XML："
+msgstr "无效的XML："
 
 msgid "plugins.importexport.common.export.error.outputFileNotWritable"
-msgstr "导出文件 {$param} 不可写。"
+msgstr "导出文件{$param}不可写。"
 
 msgid "plugins.importexport.common.export.error.inputFileNotReadable"
-msgstr "导入文件 {$param} 不可读。"
+msgstr "导入文件{$param}不可读。"
 
 msgid "plugins.importexport.common.register.error.mdsError"
 msgstr "注册失败！DOI注册服务器返回一个错误：'{$param}'。"
@@ -1850,67 +1868,25 @@ msgid "plugins.importexport.common.register.success"
 msgstr "注册成功！"
 
 msgid "plugins.importexport.common.validation.success"
-msgstr "验证成功！"
+msgstr ""
 
 msgid "plugins.importexport.common.validation.fail"
-msgstr "验证失败。"
+msgstr ""
 
 msgid "plugins.importexport.common.senderTask.warning.noDOIprefix"
-msgstr "路径为 {$path} 的期刊缺少 DOI 前缀。"
+msgstr "路径为 {$path} 的期刊缺少DOI前缀。"
+
+msgid "plugins.importexport.common.cliError"
+msgstr "错误："
+
+msgid "plugins.importexport.common.error.unknownJournal"
+msgstr "指定的期刊路径 \"{$journalPath}\"不存在。"
 
 msgid "plugins.importexport.common.error.unknownObjects"
 msgstr "指定的对象未发现。"
 
 msgid "manager.setup.notifications.copyPrimaryContact"
 msgstr "将副本发送到“期刊设置”中标识的主要联系人。"
-
-msgid "stats.contextStats"
-msgstr ""
-
-msgid "stats.context.tooltip.text"
-msgstr ""
-
-msgid "stats.context.tooltip.label"
-msgstr ""
-
-msgid "stats.context.downloadReport.description"
-msgstr ""
-
-msgid "stats.context.downloadReport.downloadContext.description"
-msgstr ""
-
-msgid "stats.context.downloadReport.downloadContext"
-msgstr ""
-
-msgid "stats.issueStats"
-msgstr ""
-
-msgid "stats.issues.details"
-msgstr ""
-
-msgid "stats.issues.searchIssueDescription"
-msgstr ""
-
-msgid "stats.issues.none"
-msgstr ""
-
-msgid "stats.issues.downloadReport.description"
-msgstr ""
-
-msgid "stats.issues.downloadReport.downloadIssues.description"
-msgstr ""
-
-msgid "stats.issues.downloadReport.downloadIssues"
-msgstr ""
-
-msgid "stats.issues.countOfTotal"
-msgstr ""
-
-msgid "stats.issues.tooltip.label"
-msgstr ""
-
-msgid "stats.issues.tooltip.text"
-msgstr ""
 
 msgid "stats.publicationStats"
 msgstr "文章统计"
@@ -1935,408 +1911,6 @@ msgstr "摘要"
 
 msgid "stats.publications.galleys"
 msgstr "文件"
-
-msgid "stats.publications.downloadReport.description"
-msgstr ""
-
-msgid "stats.publications.downloadReport.downloadSubmissions"
-msgstr ""
-
-msgid "stats.publications.downloadReport.downloadSubmissions.description"
-msgstr ""
-
-msgid "manager.setup.notifications.copySubmissionAckPrimaryContact.description"
-msgstr "将提交确认电子邮件的副本发送给该期刊的主要联系人。"
-
-msgid ""
-"manager.setup.notifications.copySubmissionAckPrimaryContact.disabled."
-"description"
-msgstr ""
-"没有为此期刊定义主要联系人。您可以在<a href=\"{$url}\">期刊设置</a>中输入主要"
-"联系人。"
-
-msgid "plugins.importexport.native.export.issues.results"
-msgstr "导出该期结果"
-
-msgid "plugins.importexport.issue.cli.display"
-msgstr "\"{$issueId}\" —— \"{$issueIdentification}\""
-
-msgid "plugins.importexport.issueGalleys.exportFailed"
-msgstr "解析期刊校样相册失败"
-
-msgid "emailTemplate.variable.context.contextName"
-msgstr "期刊名"
-
-msgid "emailTemplate.variable.context.contextUrl"
-msgstr "期刊主页 URL"
-
-msgid "emailTemplate.variable.context.contactName"
-msgstr "期刊主要联系地址"
-
-msgid "emailTemplate.variable.context.contextAcronym"
-msgstr ""
-
-msgid "emailTemplate.variable.context.contextSignature"
-msgstr "用于自动发送电子邮件的期刊电子邮件签名"
-
-msgid "emailTemplate.variable.context.contactEmail"
-msgstr "期刊主要联系人的电子邮件地址"
-
-msgid "emailTemplate.variable.context.mailingAddress"
-msgstr ""
-
-msgid "emailTemplate.variable.queuedPayment.itemName"
-msgstr "付款类型名称"
-
-msgid "emailTemplate.variable.queuedPayment.itemCost"
-msgstr "付款数额"
-
-msgid "emailTemplate.variable.queuedPayment.itemCurrencyCode"
-msgstr "支付金额的币种，如USD"
-
-msgid "emailTemplate.variable.site.siteTitle"
-msgstr "托管多种期刊的网站名称"
-
-msgid "emailTemplate.variable.subscription.subscriberDetails"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.subscriptionSignature"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.subscriptionUrl"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.expiryDate"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.subscriptionType"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.membership"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.institutionName"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.institutionMailingAddress"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.domain"
-msgstr ""
-
-msgid "emailTemplate.variable.subscription.ipRanges"
-msgstr ""
-
-msgid "emailTemplate.variable.queuedPaymentUrl"
-msgstr ""
-
-msgid "emailTemplate.variable.submissionGuidelinesUrl"
-msgstr ""
-
-msgid "emailTemplate.variable.statisticsReportNotify.publicationStatsLink"
-msgstr ""
-
-msgid "emailTemplate.variable.issueId"
-msgstr ""
-
-msgid "mailable.statisticsReportNotify.description"
-msgstr ""
-
-msgid "mailable.validateEmailContext.name"
-msgstr ""
-
-msgid "mailable.validateEmailContext.description"
-msgstr ""
-
-msgid "doi.displayName"
-msgstr ""
-
-msgid "doi.description"
-msgstr ""
-
-msgid "doi.readerDisplayName"
-msgstr ""
-
-msgid "doi.manager.displayName"
-msgstr ""
-
-msgid "doi.manager.settings.description"
-msgstr ""
-
-msgid "doi.manager.settings.explainDois"
-msgstr ""
-
-msgid "doi.manager.settings.enableRepresentationDoi"
-msgstr ""
-
-msgid "doi.manager.settings.galleysWithDescription"
-msgstr ""
-
-msgid "doi.manager.settings.doiPrefix"
-msgstr ""
-
-msgid "doi.manager.settings.doiPrefixPattern"
-msgstr ""
-
-msgid "doi.manager.settings.doiSuffixPattern"
-msgstr ""
-
-msgid "doi.manager.settings.doiSuffixPattern.example"
-msgstr ""
-
-msgid "doi.manager.settings.doiSuffixPattern.issues"
-msgstr ""
-
-msgid "doi.manager.settings.doiSuffixPattern.submissions"
-msgstr ""
-
-msgid "doi.manager.settings.doiSuffixPattern.representations"
-msgstr ""
-
-msgid "doi.manager.settings.doiIssueSuffixPatternRequired"
-msgstr ""
-
-msgid "doi.manager.settings.doiSubmissionSuffixPatternRequired"
-msgstr ""
-
-msgid "doi.manager.settings.doiRepresentationSuffixPatternRequired"
-msgstr ""
-
-msgid "doi.manager.settings.doiReassign"
-msgstr ""
-
-msgid "doi.manager.settings.doiReassign.description"
-msgstr ""
-
-msgid "doi.manager.settings.doiReassign.confirm"
-msgstr ""
-
-msgid "doi.manager.settings.doiAssignJournalWide"
-msgstr ""
-
-msgid "doi.manager.settings.doiAssignJournalWide.description"
-msgstr ""
-
-msgid "doi.manager.settings.doiAssignJournalWide.confirm"
-msgstr ""
-
-msgid "doi.manager.settings.registrationAgency"
-msgstr ""
-
-msgid "doi.manager.settings.registrationAgency.description"
-msgstr ""
-
-msgid "doi.manager.settings.registrationAgency.none"
-msgstr ""
-
-msgid "doi.editor.doi"
-msgstr ""
-
-msgid "doi.editor.doi.description"
-msgstr ""
-
-msgid "doi.editor.doi.assignDoi"
-msgstr ""
-
-msgid "doi.editor.doiObjectTypeIssue"
-msgstr ""
-
-msgid "doi.editor.doiObjectTypeSubmission"
-msgstr ""
-
-msgid "doi.editor.doiObjectTypeRepresentation"
-msgstr ""
-
-msgid "doi.editor.customSuffixMissing"
-msgstr ""
-
-msgid "doi.editor.missingIssue"
-msgstr ""
-
-msgid "doi.editor.missingParts"
-msgstr ""
-
-msgid "doi.editor.patternNotResolved"
-msgstr ""
-
-msgid "doi.editor.canBeAssigned"
-msgstr ""
-
-msgid "doi.editor.assigned"
-msgstr ""
-
-msgid "doi.editor.doiSuffixCustomIdentifierNotUnique"
-msgstr ""
-
-msgid "doi.editor.clearObjectsDoi"
-msgstr ""
-
-msgid "doi.editor.clearObjectsDoi.confirm"
-msgstr ""
-
-msgid "doi.editor.clearIssueObjectsDoi"
-msgstr ""
-
-msgid "doi.editor.clearIssueObjectsDoi.confirm"
-msgstr ""
-
-msgid "doi.editor.clearIssueObjectsDoi.description"
-msgstr ""
-
-msgid "doi.editor.assignDoi"
-msgstr ""
-
-msgid "doi.editor.assignDoi.emptySuffix"
-msgstr ""
-
-msgid "doi.editor.assignDoi.pattern"
-msgstr ""
-
-msgid "doi.editor.assignDoi.assigned"
-msgstr ""
-
-msgid "doi.editor.assignDoi.toBeAssigned"
-msgstr ""
-
-msgid "doi.editor.missingPrefix"
-msgstr ""
-
-msgid "doi.editor.preview.publication"
-msgstr ""
-
-msgid "doi.editor.preview.publication.none"
-msgstr ""
-
-msgid "doi.editor.preview.galleys"
-msgstr ""
-
-msgid "doi.editor.preview.objects"
-msgstr ""
-
-msgid "api.galley.403.publicationDidNotMatch"
-msgstr ""
-
-msgid "api.galley.403.canEditPublishedDoi"
-msgstr ""
-
-msgid "api.issue.400.invalidDoi"
-msgstr ""
-
-msgid "api.issue.403.canEditPublishedDoi"
-msgstr ""
-
-msgid "api.issue.404.issuesNotFound"
-msgstr ""
-
-msgid "doi.manager.submissionDois"
-msgstr ""
-
-msgid "doi.manager.issueDois"
-msgstr ""
-
-msgid "mailable.decision.initialDecline.notifyAuthor.description"
-msgstr ""
-
-msgid "manager.institutions.noContext"
-msgstr ""
-
-msgid "mailable.subscriptionNotify.name"
-msgstr ""
-
-msgid "mailable.subscriptionNotify.description"
-msgstr ""
-"这封电子邮件通知一位已注册的读者说，管理员已经替他们完成了订阅手续。邮件中含"
-"有期刊的网址以及访问网站内容的指引。"
-
-msgid "mailable.subscriptionExpiresSoon.name"
-msgstr ""
-
-msgid "mailable.subscriptionExpiresSoon.description"
-msgstr ""
-"这封电子邮件通知一位订户说他们的订阅期限将要到期了。邮件中含有期刊的网址以及"
-"进入网站的指南。"
-
-msgid "mailable.subscriptionExpired.name"
-msgstr ""
-
-msgid "mailable.subscriptionExpired.description"
-msgstr ""
-"这封电子邮件通知一位订户说他们的订阅时间已经到期了。邮件中含有期刊的网址以及"
-"进入网站的指南。"
-
-msgid "mailable.subscriptionExpiredLast.name"
-msgstr ""
-
-msgid "mailable.subscriptionExpiredLast.description"
-msgstr ""
-"这封电子邮件通知订阅者，订阅已到期。邮件中含有期刊的网址以及进入网站的指南。"
-
-msgid "mailable.subscriptionPurchaseIndividual.name"
-msgstr ""
-
-msgid "mailable.subscriptionPurchaseIndividual.description"
-msgstr ""
-"这个邮件通知订阅管理员有一个个人订阅已经在线购买.这里提供关于订阅的摘要信息和"
-"快速存取链接到订阅."
-
-msgid "mailable.subscriptionPurchaseInstitutional.name"
-msgstr ""
-
-msgid "mailable.subscriptionPurchaseInstitutional.description"
-msgstr ""
-"这个邮件通知订阅管理员，一个团体订阅已经在线购买。邮件还将提供关于订阅的摘要"
-"信息和到订阅的快速存取链接."
-
-msgid "mailable.subscriptionRenewIndividual.name"
-msgstr ""
-
-msgid "mailable.subscriptionRenewIndividual.description"
-msgstr ""
-"这个邮件通知订阅管理员一个个人订阅已经在线续订了。邮件还将提供关于续订的摘要"
-"信息和到续订的快速存取链接."
-
-msgid "mailable.subscriptionRenewInstitutional.name"
-msgstr ""
-
-msgid "mailable.subscriptionRenewInstitutional.description"
-msgstr ""
-"这个邮件通知订阅管理员一个团体订阅已经在线续订了。邮件还将提供关于续订的摘要"
-"信息和到续订的快速存取链接."
-
-msgid "mailable.openAccessNotify.name"
-msgstr ""
-
-msgid "mailable.openAccessNotify.description"
-msgstr ""
-"这封电子邮件是寄发给要求在一期期刊变成公开格式时收到一份通知电子邮件的已注册"
-"读者。"
-
-msgid "mailable.issuePublishNotify.name"
-msgstr ""
-
-msgid "mailable.issuePublishNotify.description"
-msgstr ""
-
-msgid "manager.manageEmails.description"
-msgstr ""
-
-msgid "mailable.layoutComplete.name"
-msgstr ""
-
-msgid "mailable.publicationVersionNotify.name"
-msgstr ""
-
-msgid "mailable.publicationVersionNotify.description"
-msgstr ""
-
-msgid "mailable.submissionNeedsEditor.description"
-msgstr ""
-
-msgid "mailable.paymentRequest.name"
-msgstr ""
-
-msgid "mailable.paymentRequest.description"
-msgstr ""
 
 #~ msgid "manager.setup.metadata.coverage"
 #~ msgstr "涵盖范围"

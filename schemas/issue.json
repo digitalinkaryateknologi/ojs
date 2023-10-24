@@ -7,20 +7,12 @@
 			"readOnly": true,
 			"apiSummary": true
 		},
-		"accessStatus": {
-			"type": "integer"
-		},
 		"articles": {
 			"type": "array",
 			"readOnly": true,
 			"items": {
 				"$ref": "#/definitions/SubmissionSummary"
 			}
-		},
-		"coverImage": {
-			"type": "string",
-			"multilingual": true,
-			"apiSummary": true
 		},
 		"coverImageAltText": {
 			"type": "string",
@@ -31,7 +23,6 @@
 			"type": "string",
 			"multilingual": true,
 			"apiSummary": true,
-			"readOnly": true,
 			"validation": [
 				"url"
 			]
@@ -51,23 +42,11 @@
 		},
 		"description": {
 			"type": "string",
-			"multilingual": true,
+			"multilingual": "true",
 			"apiSummary": true
 		},
-		"doiObject": {
-			"type": "object",
-			"description": "DOI object for this galley",
-			"apiSummary": true,
-			"readOnly": true,
-			"$ref": "#/definitions/Doi"
-		},
-		"doiId": {
-			"type": "integer",
-			"description": "Reference to the DOI for this galley",
-			"writeOnly": true,
-			"validation": [
-				"nullable"
-			]
+		"doi": {
+			"type": "string"
 		},
 		"galleys": {
 			"type": "array",
@@ -86,9 +65,9 @@
 			"readOnly": true,
 			"apiSummary": true
 		},
-		"journalId": {
-			"type": "integer",
-			"apiSummary": true
+		"isCurrent": {
+			"type": "boolean",
+			"readOnly": true
 		},
 		"lastModified": {
 			"type": "string",
@@ -98,19 +77,6 @@
 		},
 		"number": {
 			"type": "string",
-			"apiSummary": true
-		},
-		"openAccessDate": {
-			"type": "string",
-			"validation": [
-				"date:Y-m-d H:i:s"
-			]
-		},
-		"originalStyleFileName": {
-			"type": "string"
-		},
-		"published": {
-			"type": "boolean",
 			"apiSummary": true
 		},
 		"publishedUrl": {
@@ -127,24 +93,9 @@
 				"$ref": "#/definitions/SectionSummary"
 			}
 		},
-		"showNumber": {
-			"type": "boolean"
-		},
-		"showTitle": {
-			"type": "boolean"
-		},
-		"showVolume": {
-			"type": "boolean"
-		},
-		"showYear": {
-			"type": "boolean"
-		},
-		"styleFileName": {
-			"type": "string"
-		},
 		"title": {
 			"type": "string",
-			"multilingual": true,
+			"multilingual": "true",
 			"apiSummary": true
 		},
 		"urlPath": {

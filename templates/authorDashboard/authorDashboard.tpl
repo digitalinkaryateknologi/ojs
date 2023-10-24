@@ -6,9 +6,6 @@
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * Display the author dashboard.
- *
- * @hook Template::Workflow::Publication []
- * @hook Template::Workflow []
  *}
 {extends file="layouts/backend.tpl"}
 
@@ -16,9 +13,17 @@
 	<div class="pkpWorkflow">
 		<pkp-header class="pkpWorkflow__header">
 			<h1 class="pkpWorkflow__identification">
-				{include file="workflow/submissionIdentification.tpl"}
+				<span class="pkpWorkflow__identificationId">{{ submission.id }}</span>
+				<span class="pkpWorkflow__identificationDivider">/</span>
+				<span class="pkpWorkflow__identificationAuthor">
+					{{ currentPublication.authorsStringShort }}
+				</span>
+				<span class="pkpWorkflow__identificationDivider">/</span>
+				<span class="pkpWorkflow__identificationTitle">
+					{{ localizeSubmission(currentPublication.title, currentPublication.locale) }}
+				</span>
 			</h1>
-			<template #actions>
+			<template slot="actions">
 				<pkp-button
 					v-if="uploadFileUrl"
 					ref="uploadFileButton"
@@ -61,7 +66,7 @@
 					<ul>
 						{foreach from=$workflowStages item=stage}
 							<li class="pkp_workflow_{$stage.path} stageId{$stage.id}{if $stage.statusKey} initiated{/if}">
-								<a name="stage-{$stage.path}" class="{$stage.path} stageId{$stage.id}" href="{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT component="tab.authorDashboard.AuthorDashboardTabHandler" op="fetchTab" submissionId=$submission->getId() stageId=$stage.id escape=false}">
+								<a name="stage-{$stage.path}" class="{$stage.path} stageId{$stage.id}" href="{url router=$smarty.const.ROUTE_COMPONENT component="tab.authorDashboard.AuthorDashboardTabHandler" op="fetchTab" submissionId=$submission->getId() stageId=$stage.id escape=false}">
 									{translate key=$stage.translationKey}
 									{if $stage.statusKey}
 										<span class="pkp_screen_reader">
@@ -121,16 +126,9 @@
 							<pkp-form v-bind="components.{$smarty.const.FORM_TITLE_ABSTRACT}" @set="set" />
 						</tab>
 						<tab id="contributors" label="{translate key="publication.contributors"}">
-							<contributors-list-panel
-								v-bind="components.contributors"
-								class="pkpWorkflow__contributors"
-								@set="set"
-								:items="workingPublication.authors"
-								:publication="workingPublication"
-								:publication-api-url="submissionApiUrl + '/publications/' + workingPublication.id"
-								@updated:publication="setWorkingPublication"
-								@updated:contributors="setContributors"
-							></contributors-list-panel>
+							<div id="contributors-grid" ref="contributors">
+								<spinner></spinner>
+							</div>
 						</tab>
 						{if $metadataEnabled}
 							<tab id="metadata" label="{translate key="submission.informationCenter.metadata"}">

@@ -1,12 +1,10 @@
-# Simon Mathdoc <karacaca38@outlook.fr>, 2021.
-# Stefan Schneider <mail@stefan-schneider.at>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T10:49:24+00:00\n"
-"PO-Revision-Date: 2023-07-07 19:58+0000\n"
-"Last-Translator: Stefan Schneider <mail@stefan-schneider.at>\n"
+"PO-Revision-Date: 2021-02-01 05:31+0000\n"
+"Last-Translator: Paul Heckler <paul.d.heckler@gmail.com>\n"
 "Language-Team: French <http://translate.pkp.sfu.ca/projects/ojs/locale/fr_FR/"
 ">\n"
 "Language: fr_FR\n"
@@ -14,10 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "user.authorization.journalDoesNotPublish"
-msgstr "Cette revue ne publie pas en ligne son contenu."
+msgstr ""
 
 msgid "context.current"
 msgstr "Revue sélectionnée :"
@@ -56,9 +54,6 @@ msgstr "En-tête de la page d'accueil"
 
 msgid "common.journalHomepageImage.altText"
 msgstr "Image de la page d'accueil de la revue"
-
-msgid "doi.manager.settings.publications"
-msgstr ""
 
 msgid "navigation.journalHelp"
 msgstr "Aide"
@@ -103,10 +98,10 @@ msgid "common.queue.short.submissionsUnassigned"
 msgstr "Non assignées"
 
 msgid "common.queue.long.submissionsInEditing"
-msgstr "Soumissions en cours d'édition"
+msgstr "Soumissions en cours de révision"
 
 msgid "common.queue.short.submissionsInEditing"
-msgstr "En édition"
+msgstr "En révision"
 
 msgid "common.queue.long.submissionsInReview"
 msgstr "Soumissions en cours d'évaluation"
@@ -261,8 +256,11 @@ msgstr "Grande"
 msgid "article.return"
 msgstr "Retourner aux informations sur l'article"
 
+msgid "category.category"
+msgstr "Catégories"
+
 msgid "submission.submissionEditing"
-msgstr "Édition de la soumission"
+msgstr "Révision de la soumission"
 
 msgid "submission.changeSection"
 msgstr "Changer pour"
@@ -304,7 +302,7 @@ msgid "submission.authorVersion"
 msgstr "Version de l'auteur"
 
 msgid "submission.copyediting"
-msgstr "Édition"
+msgstr "Révision"
 
 msgid "submission.copyedit"
 msgstr "Réviser"
@@ -361,7 +359,7 @@ msgid "submission.eventLog"
 msgstr "Registre d'événements"
 
 msgid "submissions.copyeditComplete"
-msgstr "Édition terminée"
+msgstr "Révision terminée"
 
 msgid "submissions.layoutComplete"
 msgstr "Mise en page terminée"
@@ -530,15 +528,6 @@ msgstr "Voir le numéro"
 msgid "issue.return"
 msgstr "Retourner aux informations sur le numéro"
 
-msgid "doi.issue.incorrectContext"
-msgstr ""
-
-msgid "doi.issue.incorrectStaleStatus"
-msgstr ""
-
-msgid "doi.issue.notPublished"
-msgstr ""
-
 msgid "subscriptionTypes.currency"
 msgstr "Devise"
 
@@ -653,25 +642,25 @@ msgid "submission.event.editor.submissionRestored"
 msgstr "Soumission récupérée à partir des archives"
 
 msgid "submission.event.copyedit.copyeditorAssigned"
-msgstr "Éditeur assigné à une soumission"
+msgstr "Réviseur assigné à une soumission"
 
 msgid "submission.event.copyedit.copyeditorUnassigned"
-msgstr "Éditeur non assigné à une soumission"
+msgstr "Réviseur non assigné à une soumission"
 
 msgid "submission.event.copyedit.copyeditInitiated"
-msgstr "Édition entamée"
+msgstr "Révision entamée"
 
 msgid "submission.event.copyedit.copyeditRevision"
-msgstr "Fichier de révision de l'éditeur mis à jour"
+msgstr "Fichier de révision du réviseur mis à jour"
 
 msgid "submission.event.copyedit.copyeditInitialCompleted"
-msgstr "Édition initiale terminée"
+msgstr "Révision initiale terminée"
 
 msgid "submission.event.copyedit.copyeditFinalCompleted"
-msgstr "Édition finale terminée"
+msgstr "Révision finale terminée"
 
 msgid "submission.event.copyedit.copyeditSetFile"
-msgstr "Fichier d'édition mis à jour"
+msgstr "Fichier de révision mis à jour"
 
 msgid "submission.event.proofread.proofreaderAssigned"
 msgstr "Correcteur d'épreuves assigné à la soumission"
@@ -764,6 +753,17 @@ msgstr "Décroissant"
 
 msgid "search.results.similarDocuments"
 msgstr "Documents similaires"
+
+msgid "admin.auth.defaultSourceDescription"
+msgstr ""
+"<p>Définir une source d'authentification par défaut autre que celle d'OJS a "
+"pour conséquence :</p>\n"
+"<ul>\n"
+"\t<li>Si un utilisateur tente de créer un nouveau compte sur ce site avec un "
+"nom d'utilisateur déjà existant dans la source d'authentification (mais pas "
+"dans la base de données OJS), la tentative d'inscription n'est permise que "
+"si le mot de passe fourni est valide pour ce compte.</li>\n"
+"</ul>"
 
 msgid "admin.overwriteConfigFileInstructions"
 msgstr ""
@@ -859,7 +859,7 @@ msgstr ""
 msgid "manager.setup.basicEditorialStepsDescription"
 msgstr ""
 "Étapes : Soumission en attente &gt; Soumission en évaluation &gt; Soumission "
-"en édition &gt; Table des matières.<br /><br />"
+"en révision &gt; Table des matières.<br /><br />"
 
 msgid "manager.setup.referenceLinkingDescription"
 msgstr ""
@@ -949,7 +949,7 @@ msgstr "Aucune soumission assignée."
 
 msgid "sectionEditor.copyedit.confirmRenotify"
 msgstr ""
-"Notifier de nouveau cet éditeur redémarrera la tâche qui lui a été assignée. "
+"Notifier de nouveau ce réviseur redémarrera la tâche qui lui a été assignée. "
 "Êtes-vous certain de vouloir le faire ?"
 
 msgid "sectionEditor.author.confirmRenotify"
@@ -1210,10 +1210,10 @@ msgid "copyeditor.article.fileToCopyedit"
 msgstr "Fichier à réviser"
 
 msgid "copyeditor.article.copyeditorFile"
-msgstr "Fichier de l'éditeur"
+msgstr "Fichier du réviseur"
 
 msgid "copyeditor.article.copyeditorFinalFile"
-msgstr "Fichier de l'éditeur"
+msgstr "Fichier du réviseur"
 
 msgid "proofreader.noProofreadingAssignments"
 msgstr "Aucune assignation de correction d'épreuves"
@@ -1246,43 +1246,43 @@ msgstr ""
 msgid "submission.copyedit.mustUploadFileForInitialCopyedit"
 msgstr ""
 "Le courriel de demande ne peut être envoyé avant qu'un fichier ne soit "
-"sélectionné pour édition dans Décision du rédacteur, Page d'évaluation."
+"sélectionné pour révision dans Décision du rédacteur, Page d'évaluation."
 
 msgid "submission.copyedit.mustUploadFileForCopyedit"
 msgstr ""
 "Le courriel de demande ne peut être envoyé avant que le fichier soit "
-"transféré pour édition."
+"transféré pour révision."
 
 msgid "submission.copyedit.initialCopyedit"
-msgstr "Édition initiale"
+msgstr "Révision initiale"
 
 msgid "submission.copyedit.editorsCopyedit"
-msgstr "Édition du rédacteur"
+msgstr "Révision du rédacteur"
 
 msgid "submission.copyedit.editorAuthorReview"
-msgstr "Édition de l'auteur"
+msgstr "Révision de l'auteur"
 
 msgid "submission.copyedit.finalCopyedit"
-msgstr "Édition finale"
+msgstr "Révision finale"
 
 msgid "submission.copyedit.copyeditVersion"
 msgstr "Version R"
 
 msgid "submission.copyedit.selectCopyeditor"
-msgstr "Assigner un éditeur"
+msgstr "Assigner un réviseur"
 
 msgid "submission.copyedit.useFile"
 msgstr "Utiliser le fichier"
 
 msgid "submission.copyedit.copyeditComments"
-msgstr "Commentaires d'édition"
+msgstr "Commentaires de révision"
 
 msgid "submission.copyedit.instructions"
-msgstr "Instructions d'édition"
+msgstr "Instructions de révision"
 
 msgid "submission.layout.noLayoutFile"
 msgstr ""
-"Aucun (Téléversez la version de révision finale comme version de mise en "
+"Aucun (Transférez la version de révision finale comme version de mise en "
 "page avant d'envoyer une demande)"
 
 msgid "submission.layout.galleyPublicIdentificationExists"
@@ -1325,7 +1325,7 @@ msgid "submission.logType.review"
 msgstr "Évaluation"
 
 msgid "submission.logType.copyedit"
-msgstr "Édition"
+msgstr "Révision"
 
 msgid "submission.logType.layout"
 msgstr "Mise en page"
@@ -1337,7 +1337,7 @@ msgid "submission.comments.editorAuthorCorrespondence"
 msgstr "Correspondance rédacteur/auteur"
 
 msgid "submission.comments.copyeditComments"
-msgstr "Commentaires d'édition"
+msgstr "Commentaires de révision"
 
 msgid "submission.comments.viewableDescription"
 msgstr ""
@@ -1919,9 +1919,6 @@ msgstr "Dons"
 msgid "payment.requestPublicationFee"
 msgstr "Prix de publication  ({$feeAmount})"
 
-msgid "payment.requestPublicationFee.notEnabled"
-msgstr ""
-
 msgid "payment.notFound"
 msgstr ""
 "Un paiement a été demandé, mais la requête a expiré. Contactez le "
@@ -2105,6 +2102,14 @@ msgstr ""
 "documentation d'OJS si vous êtes intéressé à prendre en charge des langues "
 "qui ne sont pas listées ici."
 
+msgid "installer.additionalLocalesInstructions"
+msgstr ""
+"Sélectionner une ou plusieurs langues supplémentaires à prendre en charge "
+"dans ce système. Ces langues seront disponibles pour fins d'utilisation par "
+"les revues hébergées sur le site. Des langues supplémentaires peuvent "
+"également être installées en tout temps à partir de l'interface "
+"d'administration du site."
+
 msgid "installer.filesDirInstructions"
 msgstr ""
 "Saisir le nom du chemin d'accès complet à un répertoire existant où les "
@@ -2142,7 +2147,6 @@ msgstr ""
 "<tt>config.inc.php</tt> dans un éditeur de texte approprié et remplacer son "
 "contenu par le contenu de la zone de texte ci-dessous.</p>"
 
-#, fuzzy
 msgid "installer.installationComplete"
 msgstr ""
 "<p>Installation d'OJS réussie.</p>\n"
@@ -2159,7 +2163,6 @@ msgstr ""
 "de soutien</a> si vous avez des questions ou des commentaires.</li>\n"
 "</ol>"
 
-#, fuzzy
 msgid "installer.upgradeComplete"
 msgstr ""
 "<p>La mise à jour d'OJS à la version {$version} s'est complétée avec succès."
@@ -2270,25 +2273,26 @@ msgstr ""
 
 msgid "log.copyedit.initiate"
 msgstr ""
-"L'édition de la soumission {$submissionId} a été entamée par "
+"La révision de la soumission {$submissionId} a été entamée par "
 "{$copyeditorName}."
 
 msgid "log.copyedit.copyeditFileSet"
-msgstr "Le fichier d'édition par défaut a été sélectionné."
+msgstr "Le fichier de révision par défaut a été sélectionné."
 
 msgid "log.copyedit.initialEditComplete"
 msgstr ""
-"{$copyeditorName} a terminé l'édition initiale de la soumission "
+"{$copyeditorName} a terminé la révision initiale de la soumission "
 "{$submissionId}."
 
 msgid "log.copyedit.finalEditComplete"
 msgstr ""
-"{$copyeditorName} a terminé l'édition finale de la soumission "
+"{$copyeditorName} a terminé la révision finale de la soumission "
 "{$submissionId}."
 
 msgid "log.copyedit.copyeditorAssigned"
 msgstr ""
-"{$copyeditorName} a été assigné à l'édition de la soumission {$submissionId}."
+"{$copyeditorName} a été assigné à la révision de la soumission "
+"{$submissionId}."
 
 msgid "log.copyedit.copyeditorFile"
 msgstr "Une version révisée du fichier de la soumission a été téléchargée."
@@ -2345,7 +2349,7 @@ msgid "metadata.pkp.peerReviewed"
 msgstr "Article évalué par les pairs"
 
 msgid "notification.type.editing"
-msgstr "Événements d'édition"
+msgstr "Événements de révision"
 
 msgid "notification.type.submissionSubmitted"
 msgstr "Un nouvel article, \"{$title},\" a été soumis."
@@ -2363,9 +2367,6 @@ msgstr "Un numéro a été publié."
 
 msgid "notification.type.newAnnouncement"
 msgstr "Une nouvelle annonce a été créée."
-
-msgid "notification.type.openAccess"
-msgstr ""
 
 msgid "notification.type.reviewerFormComment"
 msgstr ""
@@ -2404,7 +2405,8 @@ msgid "notification.type.awaitingRepresentations"
 msgstr "Épreuves en attente."
 
 msgid "user.authorization.copyeditorAssignmentMissing"
-msgstr "Accès refusé ! Vous n'avez pas été nommé éditeur de cet article."
+msgstr ""
+"Accès refusé ! Vous n'avez pas été nommé rédacteur/réviseur de cet article."
 
 msgid "user.authorization.noContext"
 msgstr "Aucune revue dans ce contexte !"
@@ -2777,6 +2779,3 @@ msgstr "Veuillez choisir comment ordonner les articles de cette catégorie."
 #~ "publications numériques, y compris les revues électroniques, les livres "
 #~ "électroniques et les collections historiques numérisées. Si votre revue a "
 #~ "signé un contrat avec Portico, activez-le ici :"
-
-#~ msgid "category.category"
-#~ msgstr "Catégories"

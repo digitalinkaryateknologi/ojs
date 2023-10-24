@@ -1,10 +1,9 @@
-# Diego José Macêdo <diegojmacedo@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30T11:58:53-07:00\n"
-"PO-Revision-Date: 2022-08-09 09:59+0000\n"
+"PO-Revision-Date: 2020-11-30 15:32+0000\n"
 "Last-Translator: Diego José Macêdo <diegojmacedo@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.pkp.sfu.ca/projects/ojs/"
 "author/pt_BR/>\n"
@@ -13,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "author.submit"
 msgstr "Nova Submissão"
@@ -70,8 +69,16 @@ msgstr "Inserir metadados"
 msgid "author.submit.supplementaryFiles"
 msgstr "Transferência de documentos suplementares"
 
+msgid "author.submit.confirmation"
+msgstr "Confirmação"
+
 msgid "author.submit.nextSteps"
 msgstr "Próximos Passos"
+
+msgid "submission.submit.cancelSubmission"
+msgstr ""
+"A submissão pode ser concluída em uma data posterior, clicando em Submissões "
+"Ativas nas opções da sua página de autor."
 
 msgid "author.submit.notAccepting"
 msgstr "A revista não está aceitando submissões neste momento."
@@ -126,6 +133,12 @@ msgstr "Os artigos devem ser submetidos a uma das seções do periódico."
 msgid "author.submit.verifyChecklist"
 msgstr "Todas as condições devem ser satisfeitas antes de continuar."
 
+msgid "author.submit.copyrightNoticeAgree"
+msgstr ""
+"Os autores concordam com os termos da Declaração de Direito Autoral, que se "
+"aplicará a esta submissão caso seja publicada nesta revista (comentários ao "
+"editor podem ser incluídos a seguir)."
+
 msgid "author.submit.copyrightNoticeAgreeRequired"
 msgstr "É obrigatório aceitar a Declaração de Direito Autoral para continuar."
 
@@ -135,8 +148,14 @@ msgstr "Comentários para o editor"
 msgid "author.submit.comments"
 msgstr "Digite o texto (opcional)"
 
+msgid "author.submit.form.sectionRequired"
+msgstr "Escolha a seção apropriada para a submissão."
+
 msgid "author.submit.form.localeRequired"
 msgstr "Escolha um idioma para a submissão."
+
+msgid "submission.submit.privacyStatement"
+msgstr "Política de Privacidade"
 
 msgid "author.submit.reorderInstructions"
 msgstr ""
@@ -282,10 +301,11 @@ msgstr "Texto Original"
 msgid "author.submit.suppFile.briefDescription"
 msgstr "Descrição"
 
+#, fuzzy
 msgid "author.submit.suppFile.availableToPeers"
 msgstr ""
 "Apresentar documento aos avaliadores (sem metadados), pois não irá "
-"comprometer a avaliação cega pelos pares."
+"comprometer a avaliação pelos pares cega."
 
 msgid "author.submit.suppFile.publisherDescription"
 msgstr "Utilizar somente com material publicado formalmente."
@@ -316,6 +336,18 @@ msgstr "Documento suplementar público já existente."
 
 msgid "author.suppFile.publicSuppFileIdentifier"
 msgstr "Identificador de documento suplementar público"
+
+msgid "author.submit.confirmationDescription"
+msgstr ""
+"Após concluídos e verificados os passos anteriores, clique em \"Concluir "
+"submissão\" para enviar seu trabalho para a revista {$journalTitle}. Um e-"
+"mail de confirmação será enviado. Acompanhe a situação da submissão, dentro "
+"do processo editorial da revista, acessando o sistema com o papel de autor. "
+"Agradecemos seu interesse em contribuir com seu trabalho para a revista "
+"{$journalTitle}."
+
+msgid "author.submit.noFiles"
+msgstr "Nenhum documento anexado à submissão."
 
 msgid "author.submit.filesSummary"
 msgstr "Resumo de documentos"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-05-21 08:10+0000\n"
-"Last-Translator: Hans Spijker <hans.spijker@huygens.knaw.nl>\n"
+"PO-Revision-Date: 2020-09-24 07:28+0000\n"
+"Last-Translator: Paul Heckler <paul.d.heckler@gmail.com>\n"
 "Language-Team: French <http://translate.pkp.sfu.ca/projects/ojs/importexport-"
-"native/fr_FR/>\n"
+"native/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +34,7 @@ msgid "plugins.importexport.native.exportIssues"
 msgstr "Exporter les numéros"
 
 msgid "plugins.importexport.native.results"
-msgstr "Résultats de l'importation"
+msgstr "Résultats"
 
 msgid "plugins.inportexport.native.uploadFile"
 msgstr "Veuillez téléverser un fichier sous « Importer » pour continuer."
@@ -43,7 +43,6 @@ msgid "plugins.importexport.native.importComplete"
 msgstr ""
 "L'importation a bien été réalisée. Les éléments suivants ont été importés :"
 
-#, fuzzy
 msgid "plugins.importexport.native.cliUsage"
 msgstr ""
 "Utilisation : {$scriptName} {$pluginName} [command] ...\n"
@@ -75,7 +74,6 @@ msgstr ""
 msgid "plugins.importexport.native.error.unknownSection"
 msgstr "Section {$param} inconnue"
 
-#, fuzzy
 msgid "plugins.importexport.native.error.unknownUser"
 msgstr "L'utilisatrice ou utilisateur spécifié, « {$userName] », n'existe pas."
 

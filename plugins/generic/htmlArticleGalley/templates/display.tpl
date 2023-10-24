@@ -6,12 +6,10 @@
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * Embedded viewing of a HTML galley.
- *
- * @hook Templates::Common::Footer::PageFooter []
  *}
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
-{capture assign="pageTitleTranslated"}{translate key="article.pageTitle" title=$article->getLocalizedTitle(null, 'html')|strip_unsafe_html}{/capture}
+{capture assign="pageTitleTranslated"}{translate key="article.pageTitle" title=$article->getLocalizedTitle()|escape}{/capture}
 {include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape} pkp_op_{$requestedOp|escape}">
 
@@ -27,7 +25,7 @@
 		</a>
 
 		<a href="{$articleUrl}" class="title">
-			{$article->getLocalizedTitle(null, 'html')|strip_unsafe_html}
+			{$article->getLocalizedTitle()|escape}
 		</a>
 	</header>
 
@@ -39,14 +37,14 @@
 				</div>
 			</div>
 			{capture assign="htmlUrl"}
-				{url page="article" op="download" path=$article->getBestId()|to_array:'version':$galleyPublication->getId():$galley->getBestGalleyId():$submissionFile->getId() inline=true}
+				{url page="article" op="download" path=$article->getBestId()|to_array:'version':$galleyPublication->getId():$galley->getBestGalleyId() inline=true}
 			{/capture}
 		{else}
 			{capture assign="htmlUrl"}
-				{url page="article" op="download" path=$article->getBestId()|to_array:$galley->getBestGalleyId():$submissionFile->getId() inline=true}
+				{url page="article" op="download" path=$article->getBestId()|to_array:$galley->getBestGalleyId() inline=true}
 			{/capture}
 		{/if}
-		<iframe name="htmlFrame" src="{$htmlUrl}" title="{translate key="submission.representationOfTitle" representation=$galley->getLabel() title=$galleyPublication->getLocalizedFullTitle(null, 'html')|strip_unsafe_html}" allowfullscreen webkitallowfullscreen></iframe>
+		<iframe name="htmlFrame" src="{$htmlUrl}" title="{translate key="submission.representationOfTitle" representation=$galley->getLabel() title=$galleyPublication->getLocalizedFullTitle()|escape}" allowfullscreen webkitallowfullscreen></iframe>
 	</div>
 	{call_hook name="Templates::Common::Footer::PageFooter"}
 </body>

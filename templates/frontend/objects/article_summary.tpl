@@ -8,27 +8,23 @@
  * @brief View of an Article summary which is shown within a list of articles.
  *
  * @uses $article Article The article
- * @uses $authorUserGroups Traversible The set of author user groups
  * @uses $hasAccess bool Can this user access galleys for this context? The
  *       context may be an issue or an article
  * @uses $showDatePublished bool Show the date this article was published?
  * @uses $hideGalleys bool Hide the article galleys for this article?
  * @uses $primaryGenreIds array List of file genre ids for primary file types
  * @uses $heading string HTML heading element, default: h2
- *
- * @hook Templates::Issue::Issue::Article []
  *}
-{assign var=publication value=$article->getCurrentPublication()}
-
-{assign var=articlePath value=$publication->getData('urlPath')|default:$article->getId()}
+{assign var=articlePath value=$article->getBestId()}
 {if !$heading}
 	{assign var="heading" value="h2"}
 {/if}
 
-{if (!$section.hideAuthor && $publication->getData('hideAuthor') == \APP\submission\Submission::AUTHOR_TOC_DEFAULT) || $publication->getData('hideAuthor') == \APP\submission\Submission::AUTHOR_TOC_SHOW}
+{if (!$section.hideAuthor && $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_DEFAULT) || $article->getHideAuthor() == $smarty.const.AUTHOR_TOC_SHOW}
 	{assign var="showAuthor" value=true}
 {/if}
 
+{assign var=publication value=$article->getCurrentPublication()}
 <div class="obj_article_summary">
 	{if $publication->getLocalizedData('coverImage')}
 		<div class="cover">
@@ -44,10 +40,11 @@
 
 	<{$heading} class="title">
 		<a id="article-{$article->getId()}" {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>
-			{$publication->getLocalizedTitle(null, 'html')|strip_unsafe_html}
-			{assign var=localizedSubtitle value=$publication->getLocalizedSubtitle(null, 'html')|strip_unsafe_html}
-			{if $localizedSubtitle}
-				<span class="subtitle">{$localizedSubtitle}</span>
+			{$article->getLocalizedTitle()|strip_unsafe_html}
+			{if $article->getLocalizedSubtitle()}
+				<span class="subtitle">
+					{$article->getLocalizedSubtitle()|escape}
+				</span>
 			{/if}
 		</a>
 	</{$heading}>
@@ -58,13 +55,15 @@
 	<div class="meta">
 		{if $showAuthor}
 		<div class="authors">
-			{$publication->getAuthorString($authorUserGroups)|escape}
+			{$article->getAuthorString()|escape}
 		</div>
 		{/if}
 
 		{* Page numbers for this article *}
 		{if $submissionPages}
-			<div class="pages">{$submissionPages|escape}</div>
+			<div class="pages">
+				{$submissionPages|escape}
+			</div>
 		{/if}
 
 		{if $showDatePublished && $submissionDatePublished}
@@ -87,11 +86,10 @@
 				{/if}
 				<li>
 					{assign var="hasArticleAccess" value=$hasAccess}
-					{if $currentContext->getSetting('publishingMode') == \APP\journal\Journal::PUBLISHING_MODE_OPEN || $publication->getData('accessStatus') == \APP\submission\Submission::ARTICLE_ACCESS_OPEN}
+					{if $currentContext->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_OPEN || $publication->getData('accessStatus') == $smarty.const.ARTICLE_ACCESS_OPEN}
 						{assign var="hasArticleAccess" value=1}
 					{/if}
-					{assign var="id" value="article-{$article->getId()}-galley-{$galley->getId()}"}
-					{include file="frontend/objects/galley_link.tpl" parent=$article publication=$publication id=$id labelledBy="{$id} article-{$article->getId()}" hasAccess=$hasArticleAccess purchaseFee=$currentJournal->getData('purchaseArticleFee') purchaseCurrency=$currentJournal->getData('currency')}
+					{include file="frontend/objects/galley_link.tpl" parent=$article publication=$publication labelledBy="article-{$article->getId()}" hasAccess=$hasArticleAccess purchaseFee=$currentJournal->getData('purchaseArticleFee') purchaseCurrency=$currentJournal->getData('currency')}
 				</li>
 			{/foreach}
 		</ul>

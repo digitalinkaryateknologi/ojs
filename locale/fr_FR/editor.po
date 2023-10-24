@@ -1,12 +1,10 @@
-# Simon Mathdoc <karacaca38@outlook.fr>, 2021.
-# Stefan Schneider <mail@stefan-schneider.at>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T10:49:23+00:00\n"
-"PO-Revision-Date: 2023-07-07 19:58+0000\n"
-"Last-Translator: Stefan Schneider <mail@stefan-schneider.at>\n"
+"PO-Revision-Date: 2021-02-04 16:47+0000\n"
+"Last-Translator: François Théron <francois.theron@uvsq.fr>\n"
 "Language-Team: French <http://translate.pkp.sfu.ca/projects/ojs/editor/fr_FR/"
 ">\n"
 "Language: fr_FR\n"
@@ -14,10 +12,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "editor.home"
 msgstr "Page d'accueil de l'éditeur"
+
+msgid "editor.reassign"
+msgstr "Réassigner"
 
 msgid "editor.submissionsAndPublishing"
 msgstr "Soumissions et publication"
@@ -68,7 +69,7 @@ msgstr ""
 
 msgid "editor.submissionReview.cannotSendToCopyediting"
 msgstr ""
-"Avant d'envoyer une soumission en Édition, utiliser le lien Aviser l'auteur "
+"Avant d'envoyer une soumission en Révision, utiliser le lien Aviser l'auteur "
 "pour l'informer de la décision et sélectionner la version à envoyer."
 
 msgid "editor.notifyUsers"
@@ -192,12 +193,6 @@ msgstr "Révisé"
 
 msgid "editor.issues.removeCoverPage"
 msgstr "Supprimer l'image de la page de couverture ?"
-
-msgid "editor.issues.removeCoverImageOnDifferentContextNowAllowed"
-msgstr ""
-"L'image de la page de couverture à supprimer correspond à un numéro d'une "
-"autre revue. Merci de vérifier que vous êtes dans la bonne revue, que vous "
-"avez le bon ID de numéro et essayez à nouveau."
 
 msgid "editor.issues.removeCoverImageFileNameMismatch"
 msgstr ""
@@ -439,9 +434,6 @@ msgstr ""
 "Frais de publication non payés. Pour planifier la publication d'un article, "
 "aviser l'auteur qu'il doit payer les frais ou demander une dérogation."
 
-msgid "editor.article.payment.requestPayment"
-msgstr ""
-
 msgid "editor.article.removeCoverImageFileNotFound"
 msgstr ""
 "L'image de page couverture à supprimer n'a pu être repérée. Elle est peut-"
@@ -475,9 +467,9 @@ msgstr "Sélectionner les fichiers d'épreuves"
 
 msgid "editor.submission.editorial.finalDraftDescription"
 msgstr ""
-"Les versions finales sur cette liste sont transformées par un éditeur en "
-"versions éditées et téléversées dans <span class=\"pkp_help_title\""
-">Édition</span>."
+"Les versions finales sur cette liste sont transformées par un réviseur en "
+"versions révisées, téléchargées dans <span class=\"pkp_help_title"
+"\">Révision</span>."
 
 msgid "editor.submission.proof.manageProofFilesDescription"
 msgstr ""

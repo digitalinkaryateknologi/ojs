@@ -1,12 +1,10 @@
-# Diego José Macêdo <diegojmacedo@gmail.com>, 2022.
-# Alex Mendonça <alex.mendonca@scielo.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30T11:58:35-07:00\n"
-"PO-Revision-Date: 2023-04-28 14:09+0000\n"
-"Last-Translator: Alex Mendonça <alex.mendonca@scielo.org>\n"
+"PO-Revision-Date: 2020-05-07 02:13+0000\n"
+"Last-Translator: Felipe Geremia Nievinski <fgnievinski@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.pkp.sfu.ca/projects/ojs/"
 "pubIds-urn/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -14,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.pubIds.urn.displayName"
 msgstr "URN"
@@ -71,7 +69,7 @@ msgid "plugins.pubIds.urn.manager.settings.urnSuffixPattern"
 msgstr ""
 "Use o padrão digitado abaixo para gerar sufixos URN. Use %j para as iniciais "
 "da revista, %v para o número do volume, %i para o número da edição, %Y para "
-"o ano, %a para o ID do artigo do OJS, %g para o ID da composição final, %f "
+"o ano,  a para o ID do artigo do OJS, %g para o ID da composição final, %f "
 "para o ID do arquivo do OJS , %p para o número da página e %x para "
 "\"Identificador personalizado\"."
 
@@ -135,7 +133,7 @@ msgid "plugins.pubIds.urn.manager.settings.urnResolver"
 msgstr "URL do Resolvedor"
 
 msgid "plugins.pubIds.urn.manager.settings.urnResolver.description"
-msgstr "(por exemplo, https://nbn-resolving.de/)"
+msgstr "(por exemplo, http://nbn-resolving.de/)"
 
 msgid "plugins.pubIds.urn.manager.settings.form.urnResolverRequired"
 msgstr "Favor informar a URL do resolvedor."
@@ -215,16 +213,17 @@ msgstr ""
 
 msgid "plugins.pubIds.urn.editor.assignURN.pattern"
 msgstr ""
-"O URN {$pubId} não pode ser atribuído porque contém um padrão não resolvido."
+"O URN  {$pubId}  não pode ser atribuído porque contém um padrão não "
+"resolvido."
 
 msgid "plugins.pubIds.urn.editor.assignURN.assigned"
-msgstr "O URN {$pubId} foi atribuído."
+msgstr "O URN {$ pubId} foi atribuído."
 
 msgid "plugins.pubIds.urn.form.checkNoRequired"
 msgstr "Número de verificação faltando."
 
 msgid "plugins.pubIds.urn.editor.urn.description"
-msgstr "O URN deve começar com {$prefix}."
+msgstr "O URN deve começar com {$ prefix}."
 
 msgid "plugins.pubIds.urn.editor.urn.assignUrn"
 msgstr "Atribuir"

@@ -56,17 +56,16 @@
 
 				{fbvFormButtons submitText="plugins.importexport.native.import" hideCancel="true"}
 			{/fbvFormArea}
-			<p><span class="formRequired">{translate key="common.requiredField"}</span></p>
 		</form>
 	</div>
 	<div id="exportSubmissions-tab">
 		<script type="text/javascript">
 			$(function() {ldelim}
 				// Attach the form handler.
-				$('#exportXmlForm').pkpHandler('$.pkp.controllers.form.AjaxFormHandler');
+				$('#exportXmlForm').pkpHandler('$.pkp.controllers.form.FormHandler');
 			{rdelim});
 		</script>
-		<form id="exportXmlForm" class="pkp_form" action="{plugin_url path="exportSubmissionsBounce"}" method="post">
+		<form id="exportXmlForm" class="pkp_form" action="{plugin_url path="exportSubmissions"}" method="post">
 			{csrf}
 			{fbvFormArea id="submissionsXmlForm"}
 				<submissions-list-panel
@@ -74,7 +73,7 @@
 					@set="set"
 				>
 
-					<template #item="{ldelim}item{rdelim}">
+					<template v-slot:item="{ldelim}item{rdelim}">
 						<div class="listPanel__itemSummary">
 							<label>
 								<input
@@ -83,17 +82,12 @@
 									:value="item.id"
 									v-model="selectedSubmissions"
 								/>
-								<span
-									class="listPanel__itemSubTitle"
-									v-html="localize(
-										item.publications.find(p => p.id == item.currentPublicationId).fullTitle,
-										item.publications.find(p => p.id == item.currentPublicationId).locale
-									)"
-								>
+								<span class="listPanel__itemSubTitle">
+									{{ localize(item.publications.find(p => p.id == item.currentPublicationId).fullTitle) }}
 								</span>
 							</label>
 							<pkp-button element="a" :href="item.urlWorkflow" style="margin-left: auto;">
-								{{ t('common.view') }}
+								{{ __('common.view') }}
 							</pkp-button>
 						</div>
 					</template>
@@ -107,7 +101,7 @@
 							{translate key="common.selectAll"}
 						</template>
 					</pkp-button>
-					<pkp-button @click="submit('#exportXmlForm')" type="submit">
+					<pkp-button @click="submit('#exportXmlForm')">
 						{translate key="plugins.importexport.native.exportSubmissions"}
 					</pkp-button>
 				{/fbvFormSection}
@@ -118,15 +112,14 @@
 		<script type="text/javascript">
 			$(function() {ldelim}
 				// Attach the form handler.
-				$('#exportIssuesXmlForm').pkpHandler('$.pkp.controllers.form.AjaxFormHandler');
+				$('#exportIssuesXmlForm').pkpHandler('$.pkp.controllers.form.FormHandler');
 			{rdelim});
 		</script>
-		<form id="exportIssuesXmlForm" class="pkp_form" action="{plugin_url path="exportIssuesBounce"}" method="post">
+		<form id="exportIssuesXmlForm" class="pkp_form" action="{plugin_url path="exportIssues"}" method="post">
 			{csrf}
 			{fbvFormArea id="issuesXmlForm"}
-				{capture assign="issuesListGridUrl"}{url router=\PKP\core\PKPApplication::ROUTE_COMPONENT component="grid.issues.ExportableIssuesListGridHandler" op="fetchGrid" escape=false}{/capture}
+				{capture assign="issuesListGridUrl"}{url router=$smarty.const.ROUTE_COMPONENT component="grid.issues.ExportableIssuesListGridHandler" op="fetchGrid" escape=false}{/capture}
 				{load_url_in_div id="issuesListGridContainer" url=$issuesListGridUrl}
-
 				{fbvFormButtons submitText="plugins.importexport.native.exportIssues" hideCancel="true"}
 			{/fbvFormArea}
 		</form>

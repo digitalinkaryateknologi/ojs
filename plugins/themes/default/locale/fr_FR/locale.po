@@ -74,24 +74,3 @@ msgstr ""
 
 msgid "plugins.themes.default.option.useHomepageImageAsHeader.option"
 msgstr "Afficher l'image de la page d'accueil comme arrière-plan de l'en-tête."
-
-msgid "plugins.themes.default.option.displayStats.label"
-msgstr ""
-
-msgid "plugins.themes.default.option.displayStats.none"
-msgstr ""
-
-msgid "plugins.themes.default.option.displayStats.bar"
-msgstr ""
-
-msgid "plugins.themes.default.option.displayStats.line"
-msgstr ""
-
-msgid "plugins.themes.default.displayStats.monthInitials"
-msgstr ""
-
-msgid "plugins.themes.default.displayStats.downloads"
-msgstr ""
-
-msgid "plugins.themes.default.displayStats.noStats"
-msgstr ""

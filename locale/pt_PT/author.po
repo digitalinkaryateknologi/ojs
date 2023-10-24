@@ -1,12 +1,10 @@
-# Carla Marques <carla.marques@usdb.uminho.pt>, 2022.
-# Antónia Correia <antonia.correia@usdb.uminho.pt>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19T10:49:30+00:00\n"
-"PO-Revision-Date: 2023-04-29 14:49+0000\n"
-"Last-Translator: Antónia Correia <antonia.correia@usdb.uminho.pt>\n"
+"PO-Revision-Date: 2020-11-27 16:28+0000\n"
+"Last-Translator: Mickael Gomes da Silva <mickael.silva@uc.pt>\n"
 "Language-Team: Portuguese (Portugal) <http://translate.pkp.sfu.ca/projects/"
 "ojs/author/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -14,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "author.submit"
 msgstr "Nova submissão"
@@ -45,16 +43,16 @@ msgid "author.submit.step1"
 msgstr "Passo 1. Iniciar submissão"
 
 msgid "author.submit.step2"
-msgstr "Passo 2. Upload do manuscrito"
+msgstr "Passo 2. Transferência do manuscrito"
 
 msgid "author.submit.step3"
-msgstr "Passo 3. Preencher os metadados da submissão"
+msgstr "Passo 3. Metadados da submissão"
 
 msgid "author.submit.step4"
-msgstr "Passo 4. Upload dos ficheiros suplementares"
+msgstr "Passo 4. Transferência de documentos suplementares"
 
 msgid "author.submit.step4a"
-msgstr "Passo 4a. Upload do documento suplementar"
+msgstr "Passo 4a. Incluir documento suplementar"
 
 msgid "author.submit.step5"
 msgstr "Passo 5. Confirmação da submissão"
@@ -63,19 +61,27 @@ msgid "author.submit.start"
 msgstr "Início"
 
 msgid "author.submit.upload"
-msgstr "Upload do manuscrito"
+msgstr "Transferência do manuscrito"
 
 msgid "author.submit.metadata"
-msgstr "Preencher metadados"
+msgstr "Inclusão de metadados"
 
 msgid "author.submit.supplementaryFiles"
-msgstr "Upload de ficheiros suplementares"
+msgstr "Transferência de documentos suplementares"
+
+msgid "author.submit.confirmation"
+msgstr "Confirmação"
 
 msgid "author.submit.nextSteps"
 msgstr "Próximos Passos"
 
+msgid "submission.submit.cancelSubmission"
+msgstr ""
+"A submissão pode ser concluída mais tarde, clicando em Submissões Ativas na "
+"página do Autor."
+
 msgid "author.submit.notAccepting"
-msgstr "Neste momento a revista não aceita submissões."
+msgstr "Neste momento esta revista não aceita submissões."
 
 msgid "author.submit.requestWaiver"
 msgstr "Solicitar isenção de taxas"
@@ -85,11 +91,12 @@ msgstr ""
 "Solicito consideração para isenção de Taxa de Submissão para este artigo"
 
 msgid "author.submit.addReasonsForWaiver"
-msgstr "Indique no campo de comentários abaixo a razão para a isenção de taxas."
+msgstr ""
+"Indique no campo de comentários abaixo a razão para a isenção de taxas."
 
 msgid "author.submit.mustEnterWaiverReason"
 msgstr ""
-"Caso tenha solicitado isenção de taxa, indique a razão no espaço disponível."
+"Indique a razão no espaço disponível, caso tenha solicitado isenção de taxa."
 
 msgid "author.submissions.queuedReviewSubsequent"
 msgstr "Em Revisão: Ronda {$round}"
@@ -104,7 +111,7 @@ msgid "author.submissions.queuedEditingProofread"
 msgstr "Em Edição: Leitura de provas solicitada"
 
 msgid "author.submissions.uploadCopyeditedVersion"
-msgstr "Upload da versão de Edição de Texto"
+msgstr "Transferir versão de Edição de Texto"
 
 msgid "author.submissions.proofreadingCorrections"
 msgstr "Correções da Leitura de Prova"
@@ -119,40 +126,49 @@ msgid "author.submissions.noSubmissions"
 msgstr "Nenhuma submissão."
 
 msgid "author.submit.journalSection"
-msgstr "Secção de revista"
+msgstr "Secção"
 
 msgid "author.submit.journalSectionDescription"
 msgstr "Escolha a secção apropriada para a submissão."
 
 msgid "author.submit.verifyChecklist"
+msgstr "Todas as condições devem ser cumpridas antes de poder continuar."
+
+msgid "author.submit.copyrightNoticeAgree"
 msgstr ""
-"Antes de continuar, deve certificar-se que todos os pontos das condições da "
-"checklist de submissão estão cumpridos."
+"Os autores concordam com os termos da Declaração de Direitos de Autor, que "
+"se aplicará a esta submissão caso seja publicada nesta revista (comentários "
+"ao editor podem ser incluídos a seguir)."
 
 msgid "author.submit.copyrightNoticeAgreeRequired"
 msgstr ""
-"Tem que concordar com os termos da Declaração de Direitos de Autor antes de "
-"continuar."
+"É obrigatório aceitar a Declaração de Direitos de Autor para continuar."
 
 msgid "submission.submit.coverNote"
-msgstr "Comentários para o Editor"
+msgstr "Comentários ao Editor"
 
 msgid "author.submit.comments"
 msgstr "Insira o texto (opcional)"
 
+msgid "author.submit.form.sectionRequired"
+msgstr "Escolha a secção apropriada para a submissão."
+
 msgid "author.submit.form.localeRequired"
 msgstr "Selecione o idioma de submissão."
 
+msgid "submission.submit.privacyStatement"
+msgstr "Política de Privacidade"
+
 msgid "author.submit.reorderInstructions"
 msgstr ""
-"Reordene os autores para que apareçam pela ordem em que serão listados na "
-"publicação."
+"Utilize as setas para alterar a ordem pela qual aparecerão os nomes dos "
+"autores na publicação."
 
 msgid "author.submit.reorder"
-msgstr "Reordene o nome do autor"
+msgstr "Reordenar nome do autor"
 
 msgid "author.submit.selectPrincipalContact"
-msgstr "Contacto principal para correspondência editorial."
+msgstr "Contacto principal para correspondência."
 
 msgid "author.submit.addAuthor"
 msgstr "Adicionar autor"
@@ -162,17 +178,18 @@ msgstr "Eliminar autor"
 
 msgid "author.submit.submissionIndexingDescription"
 msgstr ""
-"Forneça termos para indexar a submissão; separe os termos com um ponto e "
-"vírgula (termo1; termo2; termo3)."
+"Insira os termos que descrevam da melhor maneira o conteúdo da submissão, "
+"segundo as categorias utilizadas pela revista e os exemplos oferecidos pelo "
+"editor. Separe os termos com ponto e vírgula (termo1; termo2; termo3)."
 
 msgid "author.submit.coverageInstructions"
 msgstr ""
 "Refere-se à localização ou cobertura geográfica, cronológica ou histórica, e/"
-"ou às características da amostra."
+"ou às características de amostragem da pesquisa."
 
 msgid "author.submit.languageInstructions"
 msgstr ""
-"Português=pt; English=en; French=fr; Spanish=es. <a href=\"https://www.loc."
+"Português=pt; English=en; French=fr; Spanish=es. <a href=\"http://www.loc."
 "gov/standards/iso639-2/php/code_list.php\" target=\"_blank\">Códigos "
 "Adicionais</a>."
 
@@ -180,7 +197,7 @@ msgid "author.submit.form.authorRequired"
 msgstr "A submissão deve ter pelo menos um autor."
 
 msgid "author.submit.form.authorRequiredFields"
-msgstr "São campos obrigatórios o nome, apelido e e-mail de cada autor."
+msgstr "São campos obrigatórios o nome, apelido e e-mail para cada autor."
 
 msgid "author.submit.form.titleRequired"
 msgstr "Insira o título do artigo."
@@ -195,38 +212,37 @@ msgid "author.submit.submissionFile"
 msgstr "Ficheiro submetido"
 
 msgid "author.submit.uploadSubmissionFile"
-msgstr "Adicionar ficheiro de submissão"
+msgstr "Transferir ficheiro"
 
 msgid "author.submit.replaceSubmissionFile"
-msgstr "Substituir ficheiro de submissão"
+msgstr "Substituir ficheiro"
 
 msgid "author.submit.noSubmissionFile"
-msgstr "Nenhum ficheiro foi adicionado."
+msgstr "Nenhum ficheiro transferido."
 
 msgid "author.submit.noSubmissionConfirm"
-msgstr "Deseja realmente continuar sem submeter um ficheiro no sistema?"
+msgstr "Deseja realmente continuar sem transferir um ficheiro para o sistema?"
 
 msgid "author.submit.supplementaryFilesInstructions"
 msgstr ""
-"Este passo opcional no processo de submissão permite adicionar ficheiros "
-"suplementares. Os ficheiros, que podem ter qualquer formato, podem incluir "
-"(a) instrumentos de pesquisa, (b) conjuntos de dados, segundo os padrões "
-"éticos, (c) fontes de informação usualmalmente não disponíveis para os "
-"leitores, ou (d) figuras ou tabelas que não podem ser integradas no texto em "
-"si, ou outros materiais que adicionem algum contributo ao trabalho."
+"Este é um passo opcional no processo de submissão. Documentos Suplementares, "
+"em qualquer formato, podem incluir (a) instrumentos de pesquisa, (b) "
+"conjuntos de dados, que seguem os padrões de ética de avaliação, (c) fontes "
+"de informação normalmente não disponíveis para leitores, ou (d) figuras ou "
+"tabelas que não podem ser integradas ao texto em si, ou outros materiais que "
+"adicionem algum contributo ao trabalho."
 
 msgid "author.submit.supplementaryFiles.saveToUpload"
 msgstr ""
-"Clique em Guardar para adicionar o documento (depois poderá inserir "
-"ficheiros adicionais)."
+"Clique Guardar para transferir documento (depois poderá inserir ficheiros "
+"adicionais)."
 
 msgid "author.submit.forgottenSubmitSuppFile"
 msgstr ""
-"Deseja realmente continuar sem adicionar os documentos suplementares "
-"escolhidos?"
+"Deseja realmente continuar sem enviar os documentos suplementares escolhidos?"
 
 msgid "author.submit.noSupplementaryFiles"
-msgstr "Nenhum documento suplementar foi anexado à submissão."
+msgstr "Nenhum documento suplementar anexado à submissão."
 
 msgid "author.submit.backToSupplementaryFiles"
 msgstr "Voltar para Documentos Suplementares"
@@ -235,36 +251,36 @@ msgid "author.submit.confirmDeleteSuppFile"
 msgstr "Deseja realmente eliminar este documento suplementar?"
 
 msgid "author.submit.uploadSuppFile"
-msgstr "Adicionar ficheiros suplementares"
+msgstr "Transferir documentos suplementares"
 
 msgid "author.submit.addSupplementaryFile"
-msgstr "Adicionar Ficheiro Suplementar"
+msgstr "Adicionar Documento Suplementar"
 
 msgid "author.submit.editSupplementaryFile"
-msgstr "Editar Ficheiro Suplementar"
+msgstr "Editar Documento Suplementar"
 
 msgid "author.submit.supplementaryFileData"
-msgstr "Metadados do Ficheiro Suplementar"
+msgstr "Metadados do Documento Suplementar"
 
 msgid "author.submit.supplementaryFileDataDescription"
 msgstr ""
-"Para indexar este material suplementar, forneça os seguintes metadados para "
-"o ficheiro suplementar carregado."
+"Indique os seguintes metadados para cada documento suplementar, conforme "
+"necessário, e transfira o documento."
 
 msgid "author.submit.supplementaryFileUpload"
-msgstr "Ficheiro Suplementar"
+msgstr "Documento Suplementar"
 
 msgid "author.submit.suppFile.createrOrOwner"
-msgstr "Criador ou Proprietário do ficheiro"
+msgstr "Proprietário do documento"
 
 msgid "author.submit.suppFile.researchInstrument"
-msgstr "Instrumento de Investigação"
+msgstr "Instrumento de Pesquisa"
 
 msgid "author.submit.suppFile.researchMaterials"
-msgstr "Materiais de Investigação"
+msgstr "Materiais de Pesquisa"
 
 msgid "author.submit.suppFile.researchResults"
-msgstr "Resultados de Investigação"
+msgstr "Resultados de Pesquisa"
 
 msgid "author.submit.suppFile.transcripts"
 msgstr "Transcrição"
@@ -279,45 +295,56 @@ msgid "author.submit.suppFile.sourceText"
 msgstr "Texto Original"
 
 msgid "author.submit.suppFile.briefDescription"
-msgstr "Breve descrição"
+msgstr "Descrição"
 
 msgid "author.submit.suppFile.availableToPeers"
 msgstr ""
-"Apresentar documento aos revisores (sem metadados), para não comprometer o "
-"anonimato da revisão."
+"Apresentar documento aos revisores (sem metadados), pois não irá comprometer "
+"o anonimato da revisão."
 
 msgid "author.submit.suppFile.publisherDescription"
-msgstr "Usar apenas com material publicado formalmente."
+msgstr "Utilizar somente com material publicado formalmente."
 
 msgid "author.submit.suppFile.dateDescription"
 msgstr "Data da recolha de dados ou criação do instrumento."
 
 msgid "author.submit.suppFile.sourceDescription"
-msgstr "Nome do estudo ou outro ponto de origem."
+msgstr "Nome do estudo ou ponto de origem."
 
 msgid "author.submit.suppFile.specifyOtherType"
 msgstr "Especificar Outro"
 
 msgid "author.submit.suppFile.noFile"
-msgstr "Nenhum documento adicionado."
+msgstr "Nenhum documento transferido."
 
 msgid "author.submit.suppFile.form.titleRequired"
-msgstr "Introduza o título deste ficheiro suplementar."
+msgstr "Título do documento suplementar obrigatório."
 
 msgid "author.submit.suppFile.form.subjectRequired"
-msgstr "Introduza um assunto."
+msgstr "Assunto obrigatório."
 
 msgid "author.submit.suppFile.form.descriptionRequired"
-msgstr "Introduza uma descrição."
+msgstr "Descrição obrigatória."
 
 msgid "author.suppFile.suppFilePublicIdentificationExists"
-msgstr "A identificação pública do ficheiro suplementar já existe."
+msgstr "Documento suplementar público já existente."
 
 msgid "author.suppFile.publicSuppFileIdentifier"
 msgstr "Identificador de documento suplementar público"
 
+msgid "author.submit.confirmationDescription"
+msgstr ""
+"Após a conclusão e verificação dos passos anteriores, clique em \"Concluir "
+"submissão\" para enviar o seu manuscrito para a revista {$journalTitle}. "
+"Será enviado um e-mail de confirmação e a situação da submissão no processo "
+"editorial pode ser acompanhada ao aceder ao sistema. Agradecemos o seu "
+"interesse em publicar na revista {$journalTitle}."
+
+msgid "author.submit.noFiles"
+msgstr "Nenhum documento anexado à submissão."
+
 msgid "author.submit.filesSummary"
-msgstr "Resumo do ficheiro"
+msgstr "Resumo de documentos"
 
 msgid "author.submit.finishSubmission"
 msgstr "Concluir submissão"
@@ -328,20 +355,20 @@ msgstr ""
 "{$journalTitle}."
 
 msgid "author.article.uploadAuthorVersion"
-msgstr "Adicionar Versão do Autor"
+msgstr "Transferir Versão do Autor"
 
 msgid "author.article.copyeditedFile"
-msgstr "Ficheiro corrigido"
+msgstr "Documento Corrigido"
 
 msgid "author.article.authorRevisedFile"
 msgstr "Versão do Autor"
 
 msgid "author.submit.authorSubmitLoginMessage"
 msgstr ""
-"É necessária uma conta de utilizador para submeter artigos a esta revista. "
-"Isto permite que os nossos editores acompanhem as suas submissões e o "
-"contactem quando o estado da sua submissão mudar, ou se lhe forem pedidas "
-"informações adicionais."
+"É necessário registar-se no portal para submeter artigos à revista. O "
+"registo permite aos editores acompanhar a submissão e notificá-lo das "
+"mudanças na situação da submissão, ou caso informações adicionais sejam "
+"necessárias para dar continuidade ao processo editorial."
 
 #~ msgid "author.submit.howToSubmit"
 #~ msgstr ""

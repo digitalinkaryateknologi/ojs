@@ -15,18 +15,12 @@
  * @uses $numAnnouncementsHomepage int Number of announcements to display on the
  *       homepage
  * @uses $issue Issue Current issue
- *
- * @hook Templates::Index::journal []
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$currentJournal->getLocalizedName()}
 
 <div class="page_index_journal">
 
 	{call_hook name="Templates::Index::journal"}
-
-	{if $highlights->count()}
-		{include file="frontend/components/highlights.tpl" highlights=$highlights}
-	{/if}
 
 	{if !$activeTheme->getOption('useHomepageImageAsHeader') && $homepageImage}
 		<div class="homepage_image">
@@ -60,7 +54,7 @@
 				{else}
 					<article class="obj_announcement_summary">
 						<h4>
-							<a href="{url router=\PKP\core\PKPApplication::ROUTE_PAGE page="announcement" op="view" path=$announcement->getId()}">
+							<a href="{url router=$smarty.const.ROUTE_PAGE page="announcement" op="view" path=$announcement->getId()}">
 								{$announcement->getLocalizedTitle()|escape}
 							</a>
 						</h4>
@@ -85,7 +79,7 @@
 				{$issue->getIssueIdentification()|strip_unsafe_html}
 			</div>
 			{include file="frontend/objects/issue_toc.tpl" heading="h3"}
-			<a href="{url router=\PKP\core\PKPApplication::ROUTE_PAGE page="issue" op="archive"}" class="read_more">
+			<a href="{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}" class="read_more">
 				{translate key="journal.viewAllIssues"}
 			</a>
 		</section>

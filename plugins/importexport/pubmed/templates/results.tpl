@@ -42,7 +42,7 @@
 	<ul>
 		{foreach from=$content item=contentItem}
 			<li>
-				{if $contentItem instanceof APP\submission\Submission}
+				{if is_a($contentItem, 'Submission')}
 					{$contentItem->getLocalizedTitle()|strip_unsafe_html}</li>
 				{else}
 					{$contentItem->getIssueIdentification()|escape}

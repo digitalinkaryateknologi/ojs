@@ -1,15 +1,10 @@
-# EDMILSON JOSE BOREGAS <ejsboregas@fgv.br>, 2021.
-# Flavio Chaffin <flavio.chaffin@gmail.com>, 2021.
-# Diego José Macêdo <diegojmacedo@gmail.com>, 2021, 2022, 2023.
-# cicilia conceiçao de maria <ccmaria@uem.br>, 2022, 2023.
-# William Costa Rodrigues <webmaster@antsoft.com.br>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30T11:58:53-07:00\n"
-"PO-Revision-Date: 2023-04-24 20:16+0000\n"
-"Last-Translator: Diego José Macêdo <diegojmacedo@gmail.com>\n"
+"PO-Revision-Date: 2021-02-03 17:44+0000\n"
+"Last-Translator: Alex Mendonça <alex.mendonca@scielo.org>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.pkp.sfu.ca/projects/ojs/"
 "manager/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "manager.distribution.access"
 msgstr "Acesso"
@@ -51,27 +46,13 @@ msgstr ""
 "A revista terá controle de assinaturas para acesso ao seu conteúdo, ou parte "
 "dele."
 
-msgid "manager.setup.enableDois.description"
-msgstr ""
-"Permitir que Identificadores de Objetos Digitais (DOIs) sejam atribuídos a "
-"trabalhos publicados nesta revista."
-
-msgid "doi.manager.settings.doiObjectsRequired"
-msgstr ""
-"Selecione quais itens serão atribuídos a um DOI. A maioria dos periódicos "
-"atribui DOIs a artigos, mas você pode querer atribuir DOIs a todos os itens "
-"publicados."
-
-msgid "doi.manager.settings.doiSuffixLegacy"
-msgstr ""
-"Use padrões .<br />%j.v%vi%i para edições<br />%j.v%vi%i.%a para artigos<br /"
-">%j.v%vi%i.%a.g%g para composições."
-
-msgid "doi.manager.settings.doiCreationTime.copyedit"
-msgstr "Ao atingir a etapa de Edição de Texto"
-
 msgid "manager.website.archiving"
 msgstr "Arquivamento"
+
+msgid "manager.emails.confirmResetAll"
+msgstr ""
+"Deseja realmente restaurar todos os e-mails para o padrão original para esta "
+"revista? Todas as personalizações serão perdidas."
 
 msgid "manager.files.note"
 msgstr ""
@@ -313,12 +294,18 @@ msgstr ""
 msgid "manager.sections.abstractsNotRequired"
 msgstr "Não exigir resumos"
 
+msgid "manager.section.noSectionEditors"
+msgstr ""
+"Ainda não existem editores de seção. Designe este papel a ao menos um "
+"usuário por meio de Gerente > Configurações > Usuários e Papéis."
+
 msgid "manager.sections.assigned"
 msgstr "Editores desta seção"
 
 msgid "manager.sections.confirmDelete"
 msgstr "Deseja realmente excluir permanentemente esta seção?"
 
+#, fuzzy
 msgid "manager.sections.alertDelete"
 msgstr ""
 "Antes de poder excluir esta seção, é necessário mover os artigos publicados "
@@ -414,7 +401,7 @@ msgid "manager.setup"
 msgstr "Configuração"
 
 msgid "manager.setup.masthead"
-msgstr "Expediente"
+msgstr "Equipe Editorial"
 
 msgid "manager.setup.editorialTeam"
 msgstr "Equipe Editorial"
@@ -745,11 +732,6 @@ msgstr ""
 msgid "manager.setup.contextInitials"
 msgstr "Sigla"
 
-msgid "manager.setup.selectCountry"
-msgstr ""
-"Selecione o país onde esta revista está localizada, ou o país do endereço de "
-"correspondência da revista ou editora."
-
 msgid "manager.setup.journalLayout"
 msgstr "Visual"
 
@@ -829,7 +811,7 @@ msgstr ""
 "uso da PKP PN."
 
 msgid "manager.setup.plnPluginArchiving"
-msgstr "Rede de Preservação (PKP)"
+msgstr "Rede de Preservação PKP (PKP PN)"
 
 msgid "manager.setup.plnPluginNotInstalled"
 msgstr ""
@@ -845,13 +827,13 @@ msgid "manager.setup.lockssEnable"
 msgstr ""
 "Habilitar o LOCKSS para armazenar e distribuir o conteúdo do periódico nas "
 "bibliotecas participantes por meio de uma página LOCKSS <a href="
-"\"{$lockssUrl}\" target=\"_blank\">Manifesto do Publicador</a>."
+"\"$lockssUrl}\" target=\"_blank\">Manifesto do Publicador</a>."
 
 msgid "manager.setup.lockssLicenseDescription"
 msgstr ""
 "Uma licença LOCKSS aparecerá na seção Sobre a Revista sob Arquivamento: <a "
 "href=\"http://www.lockss.org/community/publishers-titles-gln/\" target="
-"\"_blank\"> Licença LOCKSS </a>"
+"\"_blank\"> Licença  LOCKSS </a>"
 
 msgid "manager.setup.lockssLicenseLabel"
 msgstr "Descrição da Licença LOCKSS"
@@ -912,7 +894,7 @@ msgid "manager.setup.managingPublishingSetup"
 msgstr "Configurações administrativas e de publicação"
 
 msgid "manager.setup.managingTheJournal"
-msgstr "Passo 4. Administração da Revista"
+msgstr "Passo 4. Administração da revista"
 
 msgid "manager.setup.navigationBar"
 msgstr "Barra de navegação"
@@ -928,16 +910,16 @@ msgstr ""
 msgid "manager.setup.navItemIsLiteral"
 msgstr ""
 "O rótulo é um texto literal (ex.: \"Administração da Revista\") em vez de "
-"uma chave de tradução (ex.: \"manager.setup\")"
+"uma chave de tradução (ex.: \"manager.setup.nav\")"
 
 msgid "manager.setup.noImageFileUploaded"
-msgstr "Nenhum arquivo de imagem foi carregado."
+msgstr "Nenhuma imagem para exibição."
 
 msgid "manager.setup.noStyleSheetUploaded"
 msgstr "Nenhuma Folha de Estilos enviada."
 
 msgid "manager.setup.note"
-msgstr "Nota"
+msgstr "Nota de agradecimento"
 
 msgid "manager.setup.notifications.submissionAckDisabled"
 msgstr ""
@@ -986,11 +968,10 @@ msgstr "Periodicidade de publicação"
 
 msgid "manager.setup.publicationScheduleDescription"
 msgstr ""
-"Os itens da revista podem ser publicados coletivamente, como parte de uma "
-"edição com seu próprio sumário. Alternativamente, itens individuais podem "
-"ser publicados assim que estiverem prontos, adicionando-os ao sumário do "
-"volume \"atual\". Informe os leitores, na página Sobre a revista, a respeito "
-"do formato adotado pela revista e a periodicidade de publicação."
+"Os itens da revista podem ser publicados coletivamente, quando o sumário "
+"estiver pronto, ou individualmente, adicionando-se os mesmos ao sumário "
+"atual quando prontos. Informe os leitores, na página Sobre a revista, a "
+"respeito do formato adotado pela revista e a periodicidade de publicação."
 
 msgid "manager.setup.publicationScheduling"
 msgstr "Periodicidade de publicação"
@@ -998,8 +979,14 @@ msgstr "Periodicidade de publicação"
 msgid "manager.setup.publicIdentifier"
 msgstr "Identificação do conteúdo"
 
+msgid "manager.setup.publishing"
+msgstr "Detalhes da publicação"
+
 msgid "manager.setup.publisher"
 msgstr "Editora"
+
+msgid "manager.setup.publishingDescription"
+msgstr "O nome da editora aparecerá na página Sobre a revista."
 
 msgid "manager.setup.referenceLinking"
 msgstr "Links para referências"
@@ -1054,6 +1041,7 @@ msgstr "Área do avaliador"
 msgid "manager.setup.reviewOptions.reviewerAccessKeysEnabled"
 msgstr "Habilitar acesso 1-clique"
 
+#, fuzzy
 msgid "manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"
 msgstr ""
 "<strong>Aviso:</strong> O convite ao avaliador conterá uma URL especial que "
@@ -1137,6 +1125,17 @@ msgstr "Informe exemplos de palavras-chave ou tópicos para auxiliar o autor"
 msgid "manager.setup.submissionGuidelines"
 msgstr "Diretrizes para submissão"
 
+msgid "manager.setup.submissionPreparationChecklist"
+msgstr "Condições para a submissão"
+
+msgid "manager.setup.submissionPreparationChecklistDescription"
+msgstr ""
+"Ao submeter um trabalho para a revista, os autores devem ler, aceitar e "
+"marcar como realizados cada condição para a submissão, antes de proceder. A "
+"lista de condições também é apresentada em Diretrizes para autores, na "
+"página Sobre a revista. A lista pode ser modificada, porém todos os itens "
+"requerem a marcação dos autores para procederem à submissão."
+
 msgid "manager.setup.submissions"
 msgstr "Submissões"
 
@@ -1196,6 +1195,16 @@ msgstr "Cadastro de usuários"
 
 msgid "manager.setup.useTextTitle"
 msgstr "Título em formato de texto"
+
+msgid "manager.statistics.defaultMetricDescription"
+msgstr ""
+"\n"
+"\t\tSua revista está configurado para registrar mais de uma métrica de uso. "
+"As estatísticas de uso serão exibidas em vários contextos.\n"
+"Há casos em que uma estatística de uso único deve ser usada, por exemplo, "
+"para exibir uma lista ordenada dos artigos mais usados ou para classificar\n"
+"resultados de busca. Selecione uma das métricas configuradas como padrão.\n"
+"\t"
 
 msgid "manager.statistics.statistics"
 msgstr "Estatísticas"
@@ -1283,6 +1292,15 @@ msgstr "Acessos à capa do periódico"
 
 msgid "manager.statistics.reports.defaultReport.issuePageViews"
 msgstr "Visualizações do sumário da edição"
+
+msgid "manager.statistics.reports.filters.byContext.description"
+msgstr "Restringir resultados por contexto (fascículos e/ou artigo)."
+
+msgid "manager.statistics.reports.filters.byObject.description"
+msgstr ""
+"Restrinja os resultados por tipo de objeto (periódico, edição, artigo, "
+"composições finais em pdf, ou outros tipos) e/ou por um ou mais IDs de "
+"objeto."
 
 msgid "manager.subscriptionPolicies"
 msgstr "Políticas de assinaturas"
@@ -1555,12 +1573,6 @@ msgstr "O tipo de assinatura é obrigatório."
 msgid "manager.subscriptions.form.typeIdValid"
 msgstr "Escolha um tipo de assinatura válido."
 
-msgid "manager.subscriptions.form.institution"
-msgstr "Instituição"
-
-msgid "manager.subscriptions.form.institutionIdValid"
-msgstr "Selecione uma instituição válida."
-
 msgid "manager.subscriptions.form.dateStart"
 msgstr "Data inicial"
 
@@ -1697,11 +1709,6 @@ msgstr "O usuário já possui uma assinatura da revista."
 msgid "manager.subscriptions.form.typeRequired"
 msgstr ""
 "Um tipo de assinatura deve ser criado antes de criar novas assinaturas."
-
-msgid "manager.subscriptions.form.institutionRequired"
-msgstr ""
-"Uma instituição deve ser criada antes que novas assinaturas possam ser "
-"feitas."
 
 msgid "manager.subscriptions.ipRange"
 msgstr "Faixa de IP"
@@ -2094,6 +2101,12 @@ msgstr "Falha na validação."
 msgid "plugins.importexport.common.senderTask.warning.noDOIprefix"
 msgstr "O prefixo DOI está faltando para a revista com o caminho {$path}."
 
+msgid "plugins.importexport.common.cliError"
+msgstr "ERRO:"
+
+msgid "plugins.importexport.common.error.unknownJournal"
+msgstr "O caminho especificado da revista, \"{$journalPath}\", não existe."
+
 msgid "plugins.importexport.common.error.unknownObjects"
 msgstr "Os objetos especificados não puderam ser encontrados."
 
@@ -2101,65 +2114,6 @@ msgid "manager.setup.notifications.copyPrimaryContact"
 msgstr ""
 "Enviar uma cópia para o contato principal, identificado nas Configurações da "
 "Revista."
-
-msgid "stats.contextStats"
-msgstr "Estatísticas da Revista"
-
-msgid "stats.context.tooltip.text"
-msgstr "Número de visitantes que visualizam a página de índice da revista."
-
-msgid "stats.context.tooltip.label"
-msgstr "Sobre as estatísticas da revista"
-
-msgid "stats.context.downloadReport.description"
-msgstr ""
-"Faça o download de uma planilha CSV/Excel com estatísticas de uso para esta "
-"revista que correspondam aos seguintes parâmetros."
-
-msgid "stats.context.downloadReport.downloadContext.description"
-msgstr "O número de exibições de página de índice da revista."
-
-msgid "stats.context.downloadReport.downloadContext"
-msgstr "Baixar Revista"
-
-msgid "stats.issueStats"
-msgstr "Estatísticas da Edição"
-
-msgid "stats.issues.details"
-msgstr "Visualizações e Downloads"
-
-msgid "stats.issues.searchIssueDescription"
-msgstr "Pesquisar título, volume e número da edição"
-
-msgid "stats.issues.none"
-msgstr ""
-"Nenhuma edição foi encontrada com estatísticas de uso correspondentes a "
-"esses parâmetros."
-
-msgid "stats.issues.downloadReport.description"
-msgstr ""
-"Baixe uma planilha CSV/Excel com estatísticas de uso para edições "
-"correspondentes aos seguintes parâmetros."
-
-msgid "stats.issues.downloadReport.downloadIssues.description"
-msgstr ""
-"O número de exibições de sumário e downloads das composições de edição para "
-"cada edição."
-
-msgid "stats.issues.downloadReport.downloadIssues"
-msgstr "Baixar Edições"
-
-msgid "stats.issues.countOfTotal"
-msgstr "{$count} de {$total} edições"
-
-msgid "stats.issues.tooltip.label"
-msgstr "Sobre estatísticas de edições"
-
-msgid "stats.issues.tooltip.text"
-msgstr ""
-"<strong>Visualizações</strong>: Número de visitantes que visualizaram o "
-"sumário da edição.<br><strong>Downloads</strong>: Número de downloads da "
-"composição da edição, se houver."
 
 msgid "stats.publicationStats"
 msgstr "Estatísticas do Artigo"
@@ -2186,482 +2140,6 @@ msgstr "Resumos"
 
 msgid "stats.publications.galleys"
 msgstr "Arquivos"
-
-msgid "stats.publications.downloadReport.description"
-msgstr ""
-"Faça o download de uma planilha CSV/Excel com estatísticas de uso para "
-"artigos que correspondam aos parâmetros a seguir."
-
-msgid "stats.publications.downloadReport.downloadSubmissions"
-msgstr "Baixar artigos"
-
-msgid "stats.publications.downloadReport.downloadSubmissions.description"
-msgstr ""
-"O número de visualizações de resumos e downloads de arquivos para cada "
-"artigo."
-
-msgid "manager.setup.notifications.copySubmissionAckPrimaryContact.description"
-msgstr ""
-"Envie uma cópia do e-mail de confirmação de submissão para o contato "
-"principal desta revista."
-
-msgid ""
-"manager.setup.notifications.copySubmissionAckPrimaryContact.disabled."
-"description"
-msgstr ""
-"Nenhum contato principal foi definido para esta revista. Você pode inserir "
-"um contato principal nas <a href=\"{$url}\"> configurações da revista </a>."
-
-msgid "plugins.importexport.native.export.issues.results"
-msgstr "Resultados de exportação das edições"
-
-msgid "plugins.importexport.issue.cli.display"
-msgstr "\"{$issueId}\" - \"{$issueIdentification}\""
-
-msgid "plugins.importexport.issueGalleys.exportFailed"
-msgstr "O processo falhou ao analisar as composições da edição"
-
-msgid "emailTemplate.variable.context.contextName"
-msgstr "Nome da revista"
-
-msgid "emailTemplate.variable.context.contextUrl"
-msgstr "URL da página da revista"
-
-msgid "emailTemplate.variable.context.contactName"
-msgstr "Nome do contato principal da revista"
-
-msgid "emailTemplate.variable.context.contextAcronym"
-msgstr "As iniciais da revista"
-
-msgid "emailTemplate.variable.context.contextSignature"
-msgstr "Assinatura dos e-mails automáticos da revista"
-
-msgid "emailTemplate.variable.context.contactEmail"
-msgstr "E-mail do contato principal da revista"
-
-msgid "emailTemplate.variable.context.mailingAddress"
-msgstr "O endereço de correspondência da revista"
-
-msgid "emailTemplate.variable.queuedPayment.itemName"
-msgstr "Nome do tipo de pagamento"
-
-msgid "emailTemplate.variable.queuedPayment.itemCost"
-msgstr "Valor to pagamento"
-
-msgid "emailTemplate.variable.queuedPayment.itemCurrencyCode"
-msgstr "Moeda do valor do pagamento, por exemplo: R$"
-
-msgid "emailTemplate.variable.site.siteTitle"
-msgstr "Nome do site quando houver mais de uma revista hospedada"
-
-msgid "emailTemplate.variable.subscription.subscriberDetails"
-msgstr ""
-"O nome, afiliação, número de telefone e endereço de e-mail do assinante"
-
-msgid "emailTemplate.variable.subscription.subscriptionSignature"
-msgstr "Detalhes de contato do gerente de assinatura"
-
-msgid "emailTemplate.variable.subscription.subscriptionUrl"
-msgstr "A URL para a página de assinatura"
-
-msgid "emailTemplate.variable.subscription.expiryDate"
-msgstr "A data em que a assinatura termina"
-
-msgid "emailTemplate.variable.subscription.subscriptionType"
-msgstr "Um resumo do tipo, nome, duração e custo da assinatura"
-
-msgid "emailTemplate.variable.subscription.membership"
-msgstr "Informações sobre a adesão do assinante"
-
-msgid "emailTemplate.variable.subscription.institutionName"
-msgstr "O nome da instituição assinante"
-
-msgid "emailTemplate.variable.subscription.institutionMailingAddress"
-msgstr "O endereço de correspondência da instituição assinante"
-
-msgid "emailTemplate.variable.subscription.domain"
-msgstr "O nome de domínio do(s) endereço(s) IP válido(s) para esta assinatura"
-
-msgid "emailTemplate.variable.subscription.ipRanges"
-msgstr "Os intervalos de IP válidos para esta assinatura"
-
-msgid "emailTemplate.variable.queuedPaymentUrl"
-msgstr "URL para a página onde o autor pode efetuar o pagamento"
-
-msgid "emailTemplate.variable.submissionGuidelinesUrl"
-msgstr "URL para as diretrizes de submissões"
-
-msgid "emailTemplate.variable.statisticsReportNotify.publicationStatsLink"
-msgstr "O link para a página de estatísticas dos artigos publicados"
-
-msgid "emailTemplate.variable.issueId"
-msgstr "O ID da Edição"
-
-msgid "mailable.statisticsReportNotify.description"
-msgstr ""
-"Este e-mail é enviado automaticamente mensalmente aos editores e gerentes de "
-"periódicos para fornecer a eles uma visão geral da integridade do sistema."
-
-msgid "mailable.validateEmailContext.name"
-msgstr "Validar e-mail (registro de revista)"
-
-msgid "mailable.validateEmailContext.description"
-msgstr ""
-"Este e-mail é enviado automaticamente para um novo usuário quando ele se "
-"registra na revista, quando as configurações exigem que o endereço de e-mail "
-"seja validado."
-
-msgid "doi.displayName"
-msgstr "DOI"
-
-msgid "doi.description"
-msgstr ""
-"Este plugin permite a atribuição dos Identificadores Digitais de Objetos a "
-"edições, artigos e composições finais no OJS."
-
-msgid "doi.readerDisplayName"
-msgstr "DOI"
-
-msgid "doi.manager.displayName"
-msgstr "DOIs"
-
-msgid "doi.manager.settings.description"
-msgstr "Configure o plugin DOI para gerenciar e usar DOIs no OJS:"
-
-msgid "doi.manager.settings.explainDois"
-msgstr ""
-"Escolha os objetos publicados que terão Identificadores de Objeto Digital "
-"(DOI) atribuídos:"
-
-msgid "doi.manager.settings.enableRepresentationDoi"
-msgstr "Composições de artigos"
-
-msgid "doi.manager.settings.galleysWithDescription"
-msgstr "Composições de artigos, como um PDF publicado"
-
-msgid "doi.manager.settings.doiPrefix"
-msgstr "Prefixo DOI"
-
-msgid "doi.manager.settings.doiPrefixPattern"
-msgstr "O prefixo DOI é obrigatório e deve possuir o formato 10.xxxx."
-
-msgid "doi.manager.settings.doiSuffixPattern"
-msgstr ""
-"Insira um padrão de sufixo personalizado para cada tipo de publicação. O "
-"padrão de sufixo personalizado pode usar os seguintes símbolos para gerar um "
-"sufixo:<br><br> <code>%j</code> Iniciais da revista<br> <code>%v</code> "
-"Volume da edição<br> <code >%i</code> Número da edição<br> <code>%Y</code> "
-"Ano da edição<br> <code>%a</code> ID do artigo<br> <code>%g</code> ID da "
-"composição<br> <code>%f</code> ID do arquivo<br> <code>%p</code> Número da "
-"página<br> <code>%x</code> Identificador personalizado<br><br> Cuidado que "
-"os padrões de sufixo personalizados geralmente levam a problemas na geração "
-"e depósito de DOIs. Ao usar um padrão de sufixo personalizado, teste "
-"cuidadosamente se os editores podem gerar DOIs e depositá-los em uma agência "
-"de registro como o Crossref. "
-
-msgid "doi.manager.settings.doiSuffixPattern.example"
-msgstr ""
-"Por examplo, vol%viss%ipp%p poderiam criar um DOI com estrutura 10.1234/"
-"vol3iss2pp230"
-
-msgid "doi.manager.settings.doiSuffixPattern.issues"
-msgstr "para edições"
-
-msgid "doi.manager.settings.doiSuffixPattern.submissions"
-msgstr "para artigos"
-
-msgid "doi.manager.settings.doiSuffixPattern.representations"
-msgstr "para composições"
-
-msgid "doi.manager.settings.doiIssueSuffixPatternRequired"
-msgstr "Informe o padrão do sufixo DOI para edições."
-
-msgid "doi.manager.settings.doiSubmissionSuffixPatternRequired"
-msgstr "Informe o padrão do sufixo DOI para artigos."
-
-msgid "doi.manager.settings.doiRepresentationSuffixPatternRequired"
-msgstr "Informe o padrão do sufixo DOI para composições."
-
-msgid "doi.manager.settings.doiReassign"
-msgstr "Atribuir DOIs novamente"
-
-msgid "doi.manager.settings.doiReassign.description"
-msgstr ""
-"Se você alterar sua configuração DOI, os DOIs que já foram atribuídas não "
-"serão afetadas. Uma vez que a configuração DOI é salva, use este botão para "
-"limpar todos os DOIs existentes para que as novas configurações tenham "
-"efeito sobre os objetos existentes."
-
-msgid "doi.manager.settings.doiReassign.confirm"
-msgstr "Deseja realmente excluir todos os DOIs existentes?"
-
-msgid "doi.manager.settings.doiAssignJournalWide"
-msgstr "Designar DOIs"
-
-msgid "doi.manager.settings.doiAssignJournalWide.description"
-msgstr ""
-"Designar DOIs a todos os objetos publicados que ainda não têm DOI designado. "
-"Esta ação não pode ser usada com a configuração de sufixos personalizados. "
-"Se você modificou a configuração acima, por favor salve suas mudanças antes "
-"de iniciar esta ação. Designar DOIs pode levar um tempo considerável, "
-"dependendo do número de objetos publicados pela revista."
-
-msgid "doi.manager.settings.doiAssignJournalWide.confirm"
-msgstr ""
-"Tem certeza que deseja designar DOIs a todos os objetos publicados que não "
-"tem DOIs designados?"
-
-msgid "doi.manager.settings.registrationAgency"
-msgstr "Agência de Registro"
-
-msgid "doi.manager.settings.registrationAgency.description"
-msgstr ""
-"Selecione a agência de registro que você gostaria de usar ao depositar DOIs."
-
-msgid "doi.manager.settings.registrationAgency.none"
-msgstr "Nenhuma"
-
-msgid "doi.editor.doi"
-msgstr "DOI"
-
-msgid "doi.editor.doi.description"
-msgstr "O DOI deve começar com {$prefix}."
-
-msgid "doi.editor.doi.assignDoi"
-msgstr "Designar"
-
-msgid "doi.editor.doiObjectTypeIssue"
-msgstr "edição"
-
-msgid "doi.editor.doiObjectTypeSubmission"
-msgstr "artigo"
-
-msgid "doi.editor.doiObjectTypeRepresentation"
-msgstr "composição final"
-
-msgid "doi.editor.customSuffixMissing"
-msgstr ""
-"O DOI não pode ser atribuído porque o sufixo personalizado está faltando."
-
-msgid "doi.editor.missingIssue"
-msgstr ""
-"Você não pode gerar um DOI até que esta publicação tenha sido atribuída a um "
-"fascículo."
-
-msgid "doi.editor.missingParts"
-msgstr ""
-"Você não pode gerar um DOI porque faltam dados em uma ou mais partes do "
-"padrão DOI. Pode ser necessário atribuir a publicação a um fascículo, "
-"definir um ID de publicador ou inserir números de página."
-
-msgid "doi.editor.patternNotResolved"
-msgstr "O DOI não pode ser atribuído porque contém um padrão inválido."
-
-msgid "doi.editor.canBeAssigned"
-msgstr ""
-"O que você vê é uma pré-visualização do DOI. Marque a caixa de seleção e "
-"salve o formulário para atribuir o DOI."
-
-msgid "doi.editor.assigned"
-msgstr "O DOI é atribuído a este {$pubObjectType}."
-
-msgid "doi.editor.doiSuffixCustomIdentifierNotUnique"
-msgstr ""
-"O sufixo DOI informado já está em uso por outro item publicado. Informe um "
-"sufixo DOI único para cada item."
-
-msgid "doi.editor.clearObjectsDoi"
-msgstr "Limpar DOI"
-
-msgid "doi.editor.clearObjectsDoi.confirm"
-msgstr "Tem certeza de que deseja excluir o DOI existente?"
-
-msgid "doi.editor.clearIssueObjectsDoi"
-msgstr "Limpar DOIs da Edição"
-
-msgid "doi.editor.clearIssueObjectsDoi.confirm"
-msgstr "Tem certeza de que deseja excluir os DOIs dos objetos desta edição?"
-
-msgid "doi.editor.clearIssueObjectsDoi.description"
-msgstr ""
-"Use a seguinte opção para limpar DOIs de todos os objetos (artigos e "
-"composições finais) atualmente agendados para essa edição."
-
-msgid "doi.editor.assignDoi"
-msgstr "Atribua o DOI {$pubId} a este {$pubObjectType}"
-
-msgid "doi.editor.assignDoi.emptySuffix"
-msgstr ""
-"O DOI não pode ser atribuído porque o sufixo personalizado está faltando."
-
-msgid "doi.editor.assignDoi.pattern"
-msgstr ""
-"O DOI {$pubId} não pode ser atribuído porque contém um padrão inválido."
-
-msgid "doi.editor.assignDoi.assigned"
-msgstr ""
-"O DOI {$pubId} foi atribuído. Para editar o DOI, visite a <a href="
-"\"{$doiManagementLink}\">Página de Gerenciamento de DOI</a>."
-
-msgid "doi.editor.assignDoi.toBeAssigned"
-msgstr "O DOI {$pubId} será atribuído na publicação."
-
-msgid "doi.editor.missingPrefix"
-msgstr "O DOI deve começar com {$doiPrefix}."
-
-msgid "doi.editor.preview.publication"
-msgstr "O DOI para esta publicação será {$doi}."
-
-msgid "doi.editor.preview.publication.none"
-msgstr "Um DOI não foi atribuído a esta publicação."
-
-msgid "doi.editor.preview.galleys"
-msgstr "Composição final: {$galleyLabel}"
-
-msgid "doi.editor.preview.objects"
-msgstr "Item"
-
-msgid "api.galley.403.publicationDidNotMatch"
-msgstr "A composição solicitada não faz parte desta publicação."
-
-msgid "api.galley.403.canEditPublishedDoi"
-msgstr ""
-"Apenas DOIs podem ser editados após a publicação de uma publicação/composição"
-
-msgid "api.issue.400.invalidDoi"
-msgstr "O DOI enviado não é válido"
-
-msgid "api.issue.403.canEditPublishedDoi"
-msgstr "Apenas DOIs podem ser editados após uma publicação ter sido publicada"
-
-msgid "api.issue.404.issuesNotFound"
-msgstr "As edições solicitadas não foram encontradas"
-
-msgid "doi.manager.submissionDois"
-msgstr "DOIs do artigo"
-
-msgid "doi.manager.issueDois"
-msgstr "DOIs da edição"
-
-msgid "mailable.decision.initialDecline.notifyAuthor.description"
-msgstr ""
-"Este e-mail notifica o autor de que sua submissão está sendo recusada, antes "
-"da fase de avaliação, porque a submissão não atende aos requisitos para "
-"publicação na revista."
-
-msgid "manager.institutions.noContext"
-msgstr "Não foi possível encontrar o periódico desta instituição."
-
-msgid "mailable.subscriptionNotify.name"
-msgstr "Notificação de Assinatura"
-
-msgid "mailable.subscriptionNotify.description"
-msgstr ""
-"Mensagem notifica o leitor cadastrado que o Editor criou sua Assinatura. "
-"Proporciona todas as informações necessárias para acesso ao conteúdo."
-
-msgid "mailable.subscriptionExpiresSoon.name"
-msgstr "A assinatura expira em breve"
-
-msgid "mailable.subscriptionExpiresSoon.description"
-msgstr ""
-"Esta mensagem avisa o assinante da proximidade do término da assinatura. "
-"Informa a URL da revista e instruções de acesso."
-
-msgid "mailable.subscriptionExpired.name"
-msgstr "Assinatura Expirada"
-
-msgid "mailable.subscriptionExpired.description"
-msgstr ""
-"Esta mensagem avisa o assinante da expiração da assinatura. Informa a URL da "
-"revista e instruções de acesso."
-
-msgid "mailable.subscriptionExpiredLast.name"
-msgstr "Assinatura expirada por último"
-
-msgid "mailable.subscriptionExpiredLast.description"
-msgstr ""
-"Esta mensagem é o último aviso ao assinante da expiração da assinatura. "
-"Informa a URL da revista e instruções de acesso."
-
-msgid "mailable.subscriptionPurchaseIndividual.name"
-msgstr "Adquira uma assinatura individual"
-
-msgid "mailable.subscriptionPurchaseIndividual.description"
-msgstr ""
-"Esta mensagem notifica o Gerente de Assinaturas que uma assinatura "
-"individual foi adquirida online. Oferece informações sobre a assinatura e um "
-"link para acesso rápido à mesma."
-
-msgid "mailable.subscriptionPurchaseInstitutional.name"
-msgstr "Adquirir assinatura institucional"
-
-msgid "mailable.subscriptionPurchaseInstitutional.description"
-msgstr ""
-"Esta mensagem notifica o Editor Gerente que uma assinatura institucional foi "
-"adquirida online. Oferece informações sobre a assinatura e um link para "
-"acesso rápido à mesma."
-
-msgid "mailable.subscriptionRenewIndividual.name"
-msgstr "Renovar assinatura individual"
-
-msgid "mailable.subscriptionRenewIndividual.description"
-msgstr ""
-"Esta mensagem notifica o Editor Gerente que uma assinatura individual foi "
-"renovada online. Oferece informações sobre a assinatura e um link para "
-"acesso rápido à mesma."
-
-msgid "mailable.subscriptionRenewInstitutional.name"
-msgstr "Renovar assinatura institucional"
-
-msgid "mailable.subscriptionRenewInstitutional.description"
-msgstr ""
-"Esta mensagem notifica o Editor Gerente que uma assinatura institucional foi "
-"renovada online. Oferece informações sobre a assinatura e um link para "
-"acesso rápido à mesma."
-
-msgid "mailable.openAccessNotify.name"
-msgstr "Notificação de Acesso Aberto"
-
-msgid "mailable.openAccessNotify.description"
-msgstr ""
-"Esta mensagem é enviada a leitores cadastrados que solicitam o recebimento "
-"do sumário de uma nova edição de Acesso Livre."
-
-msgid "mailable.issuePublishNotify.name"
-msgstr "Notificação de edição publicada"
-
-msgid "mailable.issuePublishNotify.description"
-msgstr ""
-"Este e-mail é enviado automaticamente aos usuários registrados quando a nova "
-"edição é publicada."
-
-msgid "manager.manageEmails.description"
-msgstr "Edite as mensagens enviadas nos e-mails desta revista."
-
-msgid "mailable.layoutComplete.name"
-msgstr "Composições Completas"
-
-msgid "mailable.publicationVersionNotify.name"
-msgstr "Nova Versão Criada"
-
-msgid "mailable.publicationVersionNotify.description"
-msgstr ""
-"Este e-mail notifica automaticamente os editores designados quando uma nova "
-"versão da submissão é criada."
-
-msgid "mailable.submissionNeedsEditor.description"
-msgstr ""
-"Este e-mail é enviado aos gerentes de revistas quando uma nova submissão é "
-"feita e nenhum editor é designado."
-
-msgid "mailable.paymentRequest.name"
-msgstr "Pedido de Pagamento"
-
-msgid "mailable.paymentRequest.description"
-msgstr ""
-"Este e-mail automático é enviado ao autor para solicitar o pagamento da taxa "
-"de publicação quando sua submissão for aceita."
 
 #~ msgid "manager.setup.announcements.success"
 #~ msgstr "As configurações de notícias foram atualizadas."
@@ -2733,22 +2211,3 @@ msgstr ""
 
 #~ msgid "plugins.importexport.common.action.checkStatus"
 #~ msgstr "Verificar Status"
-
-#~ msgid "doi.manager.settings.enablePublicationDoi"
-#~ msgstr "Artigos"
-
-#~ msgid "doi.editor.doiObjectTypeGalley"
-#~ msgstr "composição"
-
-msgid "plugins.importexport.common.error.issueGalleyFileMissing"
-msgstr ""
-"A composição da edição {$id} não pôde ser exportada, o arquivo não foi "
-"encontrado no caminho \"{$path}\"."
-
-msgid "plugins.importexport.common.error.import.issueGalleyFileMissing"
-msgstr "Uma composição de edição não pôde ser importada, arquivo está faltando."
-
-msgid "plugins.importexport.common.error.issueCoverImageMissing"
-msgstr ""
-"A imagem da capa da edição {$id} não foi exportada, seu arquivo não foi "
-"encontrado no caminho \"{$path}\"."

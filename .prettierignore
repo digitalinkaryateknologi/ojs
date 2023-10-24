@@ -1,3 +1,0 @@
-cypress/tests/**/*
-lib/pkp/cypress/**/*
-package.json

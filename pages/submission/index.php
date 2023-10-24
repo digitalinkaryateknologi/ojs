@@ -8,14 +8,21 @@
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @ingroup pages_submission
- *
  * @brief Handle requests for the submission wizard.
  *
  */
 
 switch ($op) {
-    case 'index':
-    case 'saved':
-    case 'wizard': // Deprecated
-        return new APP\pages\submission\SubmissionHandler();
+	//
+	// Monograph Submission
+	//
+	case 'wizard':
+	case 'step':
+	case 'saveStep':
+	case 'index':
+		import('pages.submission.SubmissionHandler');
+		define('HANDLER_CLASS', 'SubmissionHandler');
+		break;
 }
+
+

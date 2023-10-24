@@ -1,11 +1,9 @@
-# Marie-Hélène Vézina [UdeMontréal] <marie-helene.vezina@umontreal.ca>, 2022, 2023.
-# Pierre Lasou <pierre.lasou@bibl.ulaval.ca>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-30T06:56:50-07:00\n"
-"PO-Revision-Date: 2023-04-24 00:11+0000\n"
+"PO-Revision-Date: 2020-01-13 22:20+0000\n"
 "Last-Translator: Marie-Hélène Vézina [UdeMontréal] <marie-helene."
 "vezina@umontreal.ca>\n"
 "Language-Team: French (Canada) <http://translate.pkp.sfu.ca/projects/ojs/"
@@ -15,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.themes.default.name"
 msgstr "Thème par défaut"
@@ -80,33 +78,6 @@ msgstr ""
 
 msgid "plugins.themes.default.option.useHomepageImageAsHeader.option"
 msgstr "Afficher l'image de la page d'accueil comme arrière-plan de l'en-tête."
-
-msgid "plugins.themes.default.option.displayStats.label"
-msgstr "Options d'affichage des statistiques d'utilisation"
-
-msgid "plugins.themes.default.option.displayStats.none"
-msgstr ""
-"Ne pas afficher le tableau des statistiques d'utilisation des soumissions "
-"aux lecteurs."
-
-msgid "plugins.themes.default.option.displayStats.bar"
-msgstr ""
-"Utiliser le type de graphique à barres pour afficher les statistiques "
-"d'utilisation."
-
-msgid "plugins.themes.default.option.displayStats.line"
-msgstr ""
-"Utiliser le type de ligne du graphique pour l'affichage des statistiques "
-"d'utilisation."
-
-msgid "plugins.themes.default.displayStats.monthInitials"
-msgstr "Jan. Fév. Mar. Avr. Mai. Juin. Juil. Août Sep. Oct. Nov. Déc."
-
-msgid "plugins.themes.default.displayStats.downloads"
-msgstr "Téléchargements"
-
-msgid "plugins.themes.default.displayStats.noStats"
-msgstr "Les données de téléchargement ne sont pas encore disponible."
 
 #~ msgid "plugins.themes.default.option.showDescriptionInJournalIndex.label"
 #~ msgstr "Description de la revue"

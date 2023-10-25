@@ -12,11 +12,14 @@
 
 <div class="page_index_site">
 
+
 	{if $about}
-		<div class="about_site">
+		<div class="about_site" style="text-align:center;font-size:24px;">
 			{$about}
 		</div>
 	{/if}
+
+	
 
 	<div class="journals">
 		<h2>
@@ -25,22 +28,25 @@
 		{if !$journals|@count}
 			{translate key="site.noJournals"}
 		{else}
-			<ul>
+			<ul id="conten">
 				{foreach from=$journals item=journal}
 					{capture assign="url"}{url journal=$journal->getPath()}{/capture}
 					{assign var="thumb" value=$journal->getLocalizedData('journalThumbnail')}
 					{assign var="description" value=$journal->getLocalizedDescription()}
-					<li{if $thumb} class="has_thumb"{/if}>
+					<li{if $thumb} class="has_thumb"{/if} >
 						{if $thumb}
 							<div class="thumb">
 								<a href="{$url|escape}">
 									<img src="{$journalFilesPath}{$journal->getId()}/{$thumb.uploadName|escape:"url"}"{if $thumb.altText} alt="{$thumb.altText|escape|default:''}"{/if}>
 								</a>
+								<a href="{$url|escape}" id="btn">
+										{translate key="site.journalView"}
+									</a>
 							</div>
 						{/if}
 
-						<div class="body">
-							<h3>
+						<div class="body" style="display:none;" id="conten">
+							<h3 >
 								<a href="{$url|escape}" rel="bookmark">
 									{$journal->getLocalizedName()}
 								</a>
@@ -56,7 +62,7 @@
 										{translate key="site.journalView"}
 									</a>
 								</li>
-								<li class="current">
+								<li class="current" >
 									<a href="{url|escape journal=$journal->getPath() page="issue" op="current"}">
 										{translate key="site.journalCurrent"}
 									</a>

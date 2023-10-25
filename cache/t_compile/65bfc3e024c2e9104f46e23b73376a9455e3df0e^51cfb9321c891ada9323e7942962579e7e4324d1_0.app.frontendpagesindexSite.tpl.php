@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-10-25 05:44:01
+/* Smarty version 4.3.1, created on 2023-10-25 00:05:00
   from 'app:frontendpagesindexSite.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_653848b130cc75_93160075',
+  'unifunc' => 'content_65385bacdea538_09429049',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '51cfb9321c891ada9323e7942962579e7e4324d1' => 
     array (
       0 => 'app:frontendpagesindexSite.tpl',
-      1 => 1688091695,
+      1 => 1698192258,
       2 => 'app',
     ),
   ),
@@ -22,19 +22,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'app:frontend/components/footer.tpl' => 1,
   ),
 ),false)) {
-function content_653848b130cc75_93160075 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/home/staidaru/journal.staidarularafah.ac.id/lib/pkp/lib/vendor/smarty/smarty/libs/plugins/modifier.count.php','function'=>'smarty_modifier_count',),));
+function content_65385bacdea538_09429049 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\laragon\\www\\ojs\\lib\\pkp\\lib\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <div class="page_index_site">
 
+
 	<?php if ($_smarty_tpl->tpl_vars['about']->value) {?>
-		<div class="about_site">
+		<div class="about_site" style="text-align:center;font-size:24px;">
 			<?php echo $_smarty_tpl->tpl_vars['about']->value;?>
 
 		</div>
 	<?php }?>
+
+	
 
 	<div class="journals">
 		<h2>
@@ -45,7 +48,7 @@ $_smarty_tpl->_subTemplateRender("app:frontend/components/header.tpl", $_smarty_
 			<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"site.noJournals"),$_smarty_tpl ) );?>
 
 		<?php } else { ?>
-			<ul>
+			<ul id="conten">
 				<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['journals']->value, 'journal');
 $_smarty_tpl->tpl_vars['journal']->do_else = true;
@@ -57,7 +60,7 @@ echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUG
 $_smarty_tpl->smarty->ext->_capture->close($_smarty_tpl);?>
 					<?php $_smarty_tpl->_assignInScope('thumb', $_smarty_tpl->tpl_vars['journal']->value->getLocalizedData('journalThumbnail'));?>
 					<?php $_smarty_tpl->_assignInScope('description', $_smarty_tpl->tpl_vars['journal']->value->getLocalizedDescription());?>
-					<li<?php if ($_smarty_tpl->tpl_vars['thumb']->value) {?> class="has_thumb"<?php }?>>
+					<li<?php if ($_smarty_tpl->tpl_vars['thumb']->value) {?> class="has_thumb"<?php }?> >
 						<?php if ($_smarty_tpl->tpl_vars['thumb']->value) {?>
 							<div class="thumb">
 								<a href="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['url']->value ));?>
@@ -68,11 +71,16 @@ echo $_smarty_tpl->tpl_vars['journal']->value->getId();?>
 "<?php if ($_smarty_tpl->tpl_vars['thumb']->value['altText']) {?> alt="<?php echo (($tmp = call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['thumb']->value['altText'] )) ?? null)===null||$tmp==='' ? '' ?? null : $tmp);?>
 "<?php }?>>
 								</a>
+								<a href="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['url']->value ));?>
+" id="btn">
+										<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"site.journalView"),$_smarty_tpl ) );?>
+
+									</a>
 							</div>
 						<?php }?>
 
-						<div class="body">
-							<h3>
+						<div class="body" style="display:none;" id="conten">
+							<h3 >
 								<a href="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['url']->value ));?>
 " rel="bookmark">
 									<?php echo $_smarty_tpl->tpl_vars['journal']->value->getLocalizedName();?>
@@ -93,7 +101,7 @@ echo $_smarty_tpl->tpl_vars['journal']->value->getId();?>
 
 									</a>
 								</li>
-								<li class="current">
+								<li class="current" >
 									<a href="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array('journal'=>$_smarty_tpl->tpl_vars['journal']->value->getPath(),'page'=>"issue",'op'=>"current"),$_smarty_tpl ) ) ));?>
 ">
 										<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0], array( array('key'=>"site.journalCurrent"),$_smarty_tpl ) );?>
